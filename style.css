@@ -1,0 +1,178 @@
+/*margin: top right bottom left (clockwise)*/
+
+:root {
+    font-family: Inter, serif;
+    background-color: #1e2d6e;
+    --header-primary: #2196f3;
+    --header-highlight: #1e83d9;
+    --window-primary: #bae1ff;
+    --window-margins: 8px;
+    --text-padding: 5px;
+    overflow: auto;
+}
+
+.body {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    color: black;
+}
+
+/*Header*/
+
+.header {
+    margin: 0;
+    background-color: var(--header-primary);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-size: 18px;
+    float: left;
+    margin: 10px;
+    padding-right: 20px;
+    font-weight: normal;
+}
+
+.header p {
+    float: right;
+    margin: 10px;
+}
+
+/*Content*/
+
+.content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto auto auto;
+    padding-top: 45px;
+}
+
+.main {
+    flex: 50%;
+    float: left;
+    margin: var(--window-margins);
+    margin-bottom: 0;
+}
+
+.info {
+    background-color: var(--window-primary);
+    margin-bottom: var(--window-margins);
+}
+
+.info h2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: var(--text-padding);
+    background-color: var(--header-primary);
+}
+
+.info p {
+    padding: var(--text-padding);
+    font-size: 12px;
+    margin: 0;
+}
+
+/*Sidebar*/
+
+
+/*Footer*/
+
+.footer {
+    background-color: var(--header-primary);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 50;
+    max-height: 32px;
+}
+
+/*Slideout stuff*/
+
+.slideout {
+    margin: 7px 0 7px 7px;
+    display: flex;
+}
+
+#slideout-control {
+    /*position: relative;*/
+    display: none;
+}
+
+.slideout-label {
+    padding: 1px 0 1px 4px;
+    max-height: 18px;
+    position: relative;
+    font-family: monospace;
+    float: left;
+    font-size: 14px;
+    width: fit-content;
+    cursor: pointer;
+    text-align: left;
+}
+
+.slideout-cursor {
+    position: relative;
+    font-size: 14px;
+    animation: blink 1s steps(2, start) infinite;
+    -webkit-animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+    to { visibility: hidden; }
+}
+
+.slideout-content.slid {
+    bottom: 105.5%;
+    transition: all .5s ease-out;
+}
+
+.slideout-content {
+    /*display: none;*/
+    /*left: 4px;  USE THIS IF TRIANGLE IS CHOSEN*/
+    transition: all .5s ease-out;
+    bottom: -100%;
+    left: -0.4%;
+    z-index: 100;
+    position: relative;
+    width: fit-content;
+    background-color: var(--header-primary);
+}
+
+/*.slideout-content a {*/
+/*    font-size: 14px;*/
+/*    font-family: monospace;*/
+/*    display: block;*/
+/*    color: #000000;*/
+/*    padding: 5px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.slideout-content a:hover {*/
+/*    background-color: var(--header-highlight);*/
+/*}*/
+
+.slideout-switcher {
+    margin: 0;
+    font-size: 14px;
+    font-family: monospace;
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.slideout-switcher:hover {
+    background-color: var(--header-highlight);
+    /*background-color: red;*/
+}
