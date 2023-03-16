@@ -31,6 +31,7 @@
 }
 
 .header h1 {
+    font-family: Inter, serif;
     font-size: 18px;
     float: left;
     margin: 10px;
@@ -81,6 +82,18 @@
 
 /*Sidebar*/
 
+.sidebar {
+    margin-right: var(--window-margins);
+    margin-top: var(--window-margins);
+    width: 200px;
+    height: 100%;
+    float: right;
+}
+
+.side-content {
+    background-color: var(--window-primary);
+    margin-bottom: 8px;
+}
 
 /*Footer*/
 
