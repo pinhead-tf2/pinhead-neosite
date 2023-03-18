@@ -8,7 +8,13 @@ $(document).ready(function(){
     let i=0;
     let text = "";
 
-    label.addEventListener('click', function(){
+    label.addEventListener('click', labelClick);
+
+    function labelClick(){
+        if (typing) {
+            return;
+        }
+
         if(open){
             div.className = 'slideout-content';
             // cursor.className = 'slideout-cursor';
@@ -20,19 +26,23 @@ $(document).ready(function(){
         }
 
         open = !open;
-    });
+    }
 
     document.querySelectorAll('.slideout-switcher').forEach(item => {
         item.addEventListener('click', event => {
-            console.log("clicked");
             startWriter(item);
         })
     })
 
     function startWriter(item) {
+        if (item.classList.contains("noCursor")) {
+            return;
+        }
+
         if (typing === false) {
             typing = true;
             text=item.innerHTML;
+            div.className = 'slideout-content slid hide';
             typeWriter();
         }
     }
@@ -44,12 +54,18 @@ $(document).ready(function(){
             setTimeout(typeWriter, 40);
 
             if (i >= text.length) {
-                if (text === "home") {
-                    window.location = "/";
-                } else {
-                    window.location = "/" + text + "/";
-                }
+                setTimeout(waitBeforeChange, 500);
             }
+        }
+    }
+
+    function waitBeforeChange() {
+        if (text === "home") {
+            window.location = "/";
+        } else if(text === "source code") {
+            window.location = "https://github.com/pinhead-tf2/pinhead-neosite";
+        } else {
+            window.location = "/" + text + "/";
         }
     }
 });
