@@ -1,8 +1,6 @@
 $(document).ready(function(){
     const label = document.getElementById('slideout-label');
-    // var icon = document.getElementById('slideout-tri');
-    const div = document.getElementById('slideout-content');
-    const cursor = document.getElementById('slideout-cursor');
+    const slideoutContent = document.getElementById('slideout-content');
     let open = false;
     let typing = false;
     let i=0;
@@ -16,13 +14,9 @@ $(document).ready(function(){
         }
 
         if(open){
-            div.className = 'slideout-content';
-            // cursor.className = 'slideout-cursor';
-            // icon.className = 'slideout-tri';
+            slideoutContent.className = 'slideout-content';
         } else{
-            div.className = 'slideout-content slid';
-            // cursor.className = 'slideout-cursor moveRight';
-            // icon.className = 'slideout-tri open';
+            slideoutContent.className = 'slideout-content slid';
         }
 
         open = !open;
@@ -42,7 +36,7 @@ $(document).ready(function(){
         if (typing === false) {
             typing = true;
             text=item.innerHTML;
-            div.className = 'slideout-content slid hide';
+            slideoutContent.className = 'slideout-content slid hide';
             typeWriter();
         }
     }

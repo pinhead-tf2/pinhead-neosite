@@ -25,6 +25,36 @@
     color: black;
 }
 
+/*Global stuff*/
+
+.header-body {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: var(--text-padding);
+    background-color: var(--header-primary);
+    border-style: solid;
+    border-width: 0 0 var(--window-line-size) 0;
+    border-color: var(--header-line-color);
+}
+
+.paragraph-body {
+    padding: var(--text-padding);
+    font-size: 12px;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0 5px 5px 5px;
+    font-size: 12px;
+    list-style: none;
+}
+
+li::before {
+    content: "> ";
+}
+
 /*Header*/
 
 .header {
@@ -77,34 +107,6 @@
     margin-bottom: var(--window-margins);
 }
 
-.info h2 {
-    font-weight: normal;
-    font-size: 16px;
-    margin: 0;
-    padding: var(--text-padding);
-    background-color: var(--header-primary);
-    border-style: solid;
-    border-width: 0 0 var(--window-line-size) 0;
-    border-color: var(--header-line-color);
-}
-
-.info p {
-    padding: var(--text-padding);
-    font-size: 12px;
-    margin: 0;
-}
-
-.info ul {
-    margin: 0;
-    padding: 0 5px 5px 5px;
-    font-size: 12px;
-    list-style: none;
-}
-
-.info li::before {
-    content: "> ";
-}
-
 /*Sidebar*/
 
 .sidebar {
@@ -118,23 +120,6 @@
 .side-content {
     background-color: var(--window-primary);
     margin-bottom: var(--window-margins);
-}
-
-.side-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    margin: 0;
-    padding: var(--text-padding);
-    background-color: var(--header-primary);
-    border-style: solid;
-    border-width: 0 0 var(--window-line-size) 0;
-    border-color: var(--header-line-color);
-}
-
-.side-content p {
-    padding: var(--text-padding);
-    font-size: 12px;
-    margin: 0;
 }
 
 /*Footer*/
@@ -160,7 +145,6 @@
 }
 
 #slideout-control {
-    /*position: relative;*/
     display: none;
 }
 
@@ -222,6 +206,14 @@
     background-color: var(--header-primary);
 }
 
+.noCursor::before {
+    content: "> ";
+}
+
 .noCursor {
     cursor: auto;
+}
+
+.noCursor::after {
+    content: " <";
 }
