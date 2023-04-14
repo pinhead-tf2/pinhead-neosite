@@ -1,10 +1,16 @@
 $(document).ready(function(){
     const label = document.getElementById('slideout-label');
-    const slideoutContent = document.getElementById('slideout-content');
+    const div = document.getElementById('slideout-content');
+    const allPages = ['home', 'about', 'specs', 'contact', 'source code'];
     let open = false;
     let typing = false;
     let i=0;
     let text = "";
+
+    allPages.forEach(function (item) {
+        $(div).append($("<p></p>").text(item).addClass('slideout-switcher'));
+        console.log(window.location.pathname)
+    });
 
     label.addEventListener('click', labelClick);
 
@@ -14,9 +20,9 @@ $(document).ready(function(){
         }
 
         if(open){
-            slideoutContent.className = 'slideout-content';
+            div.removeClass('slid')
         } else{
-            slideoutContent.className = 'slideout-content slid';
+            div.addClass('slid')
         }
 
         open = !open;
@@ -36,7 +42,7 @@ $(document).ready(function(){
         if (typing === false) {
             typing = true;
             text=item.innerHTML;
-            slideoutContent.className = 'slideout-content slid hide';
+            div.addClass('hide')
             typeWriter();
         }
     }
