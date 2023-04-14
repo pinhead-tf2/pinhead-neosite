@@ -71,7 +71,7 @@ $(document).ready(function(){
     }
 
     function waitBeforeChange() {
-        if (text === "home") {
+        if (text === "root") {
             window.location = "/";
         } else if(text === "source code") {
             window.location = "https://github.com/pinhead-tf2/pinhead-website";
