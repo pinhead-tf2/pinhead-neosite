@@ -8,7 +8,8 @@ $(document).ready(function(){
     let text = "";
 
     allPages.forEach(function (item, index) {
-        const currentLocation = window.location.pathname.replace('/', '');
+        const currentLocation = window.location.pathname.replace(/\//g, ''); // this is gross
+        console.log(currentLocation)
         let textToAdd = item;
         let classToAdd;
         if ((currentLocation === "" && item === "root") || currentLocation === textToAdd) {
@@ -73,7 +74,7 @@ $(document).ready(function(){
         if (text === "home") {
             window.location = "/";
         } else if(text === "source code") {
-            window.location = "https://github.com/pinhead-tf2/pinhead-neosite";
+            window.location = "https://github.com/pinhead-tf2/pinhead-website";
         } else {
             window.location = "/" + text + "/";
         }
