@@ -11,7 +11,7 @@ $(document).ready(function(){
         const currentLocation = window.location.pathname.replace('/', '');
         let textToAdd = item;
         let classToAdd;
-        if (currentLocation === "/" || currentLocation === textToAdd) {
+        if (currentLocation === "" || currentLocation === textToAdd) {
             classToAdd = ["slideout-switcher", 'noCursor'];
         } else if (index === allPages.length-1 && allPages.includes(currentLocation) === false) {
             classToAdd = ["slideout-switcher", 'noCursor'];
