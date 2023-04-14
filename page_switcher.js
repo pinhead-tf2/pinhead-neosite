@@ -1,7 +1,7 @@
 $(document).ready(function(){
     const label = document.getElementById('slideout-label');
     const slideoutContent = document.getElementById('slideout-content');
-    const allPages = ['home', 'about', 'contact', 'specs', 'music', 'source code'];
+    const allPages = ['root', 'about', 'contact', 'specs', 'music', 'source code'];
     let open = false;
     let typing = false;
     let i=0;
@@ -11,7 +11,7 @@ $(document).ready(function(){
         const currentLocation = window.location.pathname.replace('/', '');
         let textToAdd = item;
         let classToAdd;
-        if (currentLocation === "" || currentLocation === textToAdd) {
+        if ((currentLocation === "" && item === "root") || currentLocation === textToAdd) {
             classToAdd = ["slideout-switcher", 'noCursor'];
         } else if (index === allPages.length-1 && allPages.includes(currentLocation) === false) {
             classToAdd = ["slideout-switcher", 'noCursor'];
