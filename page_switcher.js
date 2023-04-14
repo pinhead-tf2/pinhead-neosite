@@ -13,7 +13,7 @@ $(document).ready(function(){
         let classToAdd;
         if ((currentLocation === "" && item === "root") || currentLocation === textToAdd) {
             classToAdd = ["slideout-switcher", 'noCursor'];
-        } else if (index === allPages.length-1 && allPages.includes(currentLocation) === false) {
+        } else if (index === allPages.length-1 && allPages.includes(currentLocation) === false && currentLocation !== "") {
             classToAdd = ["slideout-switcher", 'noCursor'];
             textToAdd = currentLocation;
         } else {
