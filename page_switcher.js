@@ -1,6 +1,6 @@
 $(document).ready(function(){
     const label = document.getElementById('slideout-label');
-    const div = document.getElementById('slideout-content');
+    const slideoutContent = document.getElementById('slideout-content');
     const allPages = ['home', 'about', 'specs', 'contact', 'source code'];
     let open = false;
     let typing = false;
@@ -8,7 +8,7 @@ $(document).ready(function(){
     let text = "";
 
     allPages.forEach(function (item) {
-        $(div).append($("<p></p>").text(item).addClass('slideout-switcher'));
+        $(slideoutContent).append($("<p></p>").text(item).addClass('slideout-switcher'));
         console.log(window.location.pathname)
     });
 
@@ -20,9 +20,9 @@ $(document).ready(function(){
         }
 
         if(open){
-            div.removeClass('slid')
+            slideoutContent.className = 'slideout-content';
         } else{
-            div.addClass('slid')
+            slideoutContent.className = 'slideout-content slid';
         }
 
         open = !open;
@@ -42,7 +42,7 @@ $(document).ready(function(){
         if (typing === false) {
             typing = true;
             text=item.innerHTML;
-            div.addClass('hide')
+            slideoutContent.className = 'slideout-content slid hide';
             typeWriter();
         }
     }
