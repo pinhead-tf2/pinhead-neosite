@@ -58,7 +58,6 @@ li::before {
 /*Header*/
 
 .header {
-    margin: 0;
     background-color: var(--header-primary);
     width: 100%;
     top: 0;
@@ -79,13 +78,14 @@ li::before {
     float: left;
     margin: 10px;
     font-weight: normal;
+    width: fit-content;
 }
 
 .header p {
     display: flex;
     justify-content: right;
     margin-right: 10px;
-    flex: 1;
+    width: fit-content;
 }
 
 /*Content*/

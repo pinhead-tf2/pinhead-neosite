@@ -1,15 +1,25 @@
 $(document).ready(function(){
     const label = document.getElementById('slideout-label');
     const slideoutContent = document.getElementById('slideout-content');
-    const allPages = ['home', 'about', 'specs', 'contact', 'source code'];
+    const allPages = ['home', 'about', 'contact', 'specs', 'music', 'source code'];
     let open = false;
     let typing = false;
     let i=0;
     let text = "";
 
-    allPages.forEach(function (item) {
-        $(slideoutContent).append($("<p></p>").text(item).addClass('slideout-switcher'));
-        console.log(window.location.pathname)
+    allPages.forEach(function (item, index) {
+        const currentLocation = window.location.pathname.replace('/', '');
+        let textToAdd = item;
+        let classToAdd;
+        if (currentLocation === "/" || currentLocation === textToAdd) {
+            classToAdd = ["slideout-switcher", 'noCursor'];
+        } else if (index === allPages.length-1 && allPages.includes(currentLocation) === false) {
+            classToAdd = ["slideout-switcher", 'noCursor'];
+            textToAdd = currentLocation;
+        } else {
+            classToAdd = "slideout-switcher";
+        }
+        $(slideoutContent).append($("<p></p>").text(textToAdd).addClass(classToAdd));
     });
 
     label.addEventListener('click', labelClick);
