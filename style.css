@@ -21,6 +21,17 @@ body {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0 5px 5px 5px;
+    font-size: 12px;
+    list-style: none;
+}
+
+li::before {
+    content: "> ";
+}
+
 /*Header*/
 
 .header {
@@ -29,6 +40,7 @@ body {
     flex-basis: 100%;
     align-items: center;
     justify-content: space-between;
+    min-height: 44px;
 
     background-color: var(--header-primary);
     border-color: var(--header-line-color);
@@ -58,15 +70,47 @@ body {
 /*Footer*/
 
 .footer {
-    display: flex;
-    flex-basis: 100%;
-
-
-    /*
-    Next items can potentially cause conflicts when slideout switcher is added
-    align-items: center;
-    justify-content: space-between;
-    */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 32px;
+    min-height: 32px;
 
     background-color: var(--header-primary);
+    border-style: solid;
+    border-width: var(--header-line-size) 0 0 0;
+    border-color: var(--header-line-color);
+}
+
+.footer-flex {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 12px 6px 12px;
+}
+
+.footer-flex__slideout__label {
+    font-family: monospace;
+    font-size: 14px;
+    max-height: 18px;
+}
+
+.footer-flex__slideout__cursor {
+    position: relative;
+
+    font-size: 14px;
+    animation: blink 1s steps(2, start) infinite;
+    -webkit-animation: blink 1s steps(2, start) infinite;
+}
+
+.footer-flex__source-code {
+    font-size: 14px;
+}
+
+@keyframes blink {
+    to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+    to { visibility: hidden; }
 }
