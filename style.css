@@ -1,72 +1,126 @@
+/*Imports*/
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+}
+
 /*Global settings*/
-
 :root {
-    --header-line-size: 3px;
-    --window-line-size: 4px;
-    --window-margins: 8px;
-    --text-padding: 5px;
-    overflow: clip;
-    text-overflow: ellipsis;
+    /*Variables*/
+    /*Colors*/
+    --background--color: rgba(48, 52, 70, 1); /*Catppuccin Frappé Base*/
+    --title--background: rgba(230, 69, 83, 1); /*Catppuccin Latte Red*/
+    --attention-color: rgba(33, 150, 243, 1);
+    --text--color: rgba(205, 214, 244, 1); /*Catppuccin Mocha Text*/
+    --link--color: rgba(166, 227, 161, 1); /*Catppuccin Mocha Green*/
+    --border--color: rgba(17, 17, 27, 1); /*Catppuccin Mocha Crust*/
+    /*Start: #090979 | End: #00D4FF | Generator: https://www.learnui.design/tools/gradient-generator.html*/
+    --page--background--gradient: linear-gradient(25deg, #090979, #002e96, #004bb0, #0067c6, #0082d8, #009ee7, #00b9f4, #00d4ff);
+    /*Start: #620085 | End: #005ca4  | Generator: https://www.learnui.design/tools/gradient-generator.html*/
+    --header--background--gradient: linear-gradient(0deg, #620085, #571e8e, #4c2e96, #3f3a9b, #3144a0, #224da2, #1155a4, #005ca4);
+    --border: 2px solid var(--background--color);
 
-    font-family: Inter, serif;
-    background-color: #32449b;
-    --header-primary: #2196f3;
-    --switcher-hover: #1e83d9;
-    --window-primary: #7da9e3;
-    --header-line-color: #bae1ff;
+    /*Spacing*/
+    --content-spacing: 5px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: clip;
+
+    color: var(--text--color);
+    text-overflow: ellipsis;
 }
 
 body {
-    padding: 0;
+    background-image: var(--page--background--gradient);
+    background-attachment: fixed;
+}
+
+body a {
+    color: var(--link--color);
+}
+
+body h1, p {
     margin: 0;
+    font-weight: normal;
+}
+
+/*Container (Holds all)*/
+
+/*All Content Presets*/
+.container div, .container footer {
+    background: var(--background--color);
+}
+
+/*Fixes margins and width on all content*/
+.container {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 /*Header*/
-
 .header {
-    /*Makes header */
+/*  Set Header stuff (maybe image instead of text later?)
+    Flexed text until image is determined*/
     display: flex;
-    flex-basis: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: var(--content-spacing);
 
-    background-color: var(--header-primary);
-    border-color: var(--header-line-color);
-
-    border-style: solid;
-    border-width: 0 0 var(--header-line-size) 0;
+    background: var(--header--background--gradient) !important;
+    border: var(--border);
+    border-top: 0;
 }
 
 .header__title {
-    display: flex;
-    margin: 10px;
-    font-weight: normal;
-    width: fit-content;
-
-    font-size: 18px;
+    font-size: 64px;
 }
 
-.header__random-quote {
+/*Flex*/
+.flex {
     display: flex;
-    justify-content: right;
-    margin: 12px 10px 12px 0;
-    width: fit-content;
+    background: transparent !important;
+}
 
-    font-size: 16px;
+/*Main*/
+.container main {
+    background: transparent;
+    !important;
+    width: 74%;
+}
+
+/*Wrapper (holds each block of content in main)*/
+
+.wrapper__title:first-child {
+    margin-top: 0 !important;
+
+}
+
+.wrapper__title, .sidebar__title{
+    background: var(--header--background--gradient) !important;
+    border: var(--border);
+}
+
+.wrapper__title h1, .sidebar__title h1 {
+    font-size: 20px;
+    padding: 2px 0 2px 23px;
+}
+
+.wrapper__content {
+    padding: 24px;
+}
+
+.wrapper__content p {
+    margin: 0;
 }
 
 /*Footer*/
-
 .footer {
-    display: flex;
-    flex-basis: 100%;
-
-
-    /*
-    Next items can potentially cause conflicts when slideout switcher is added
-    align-items: center;
-    justify-content: space-between;
-    */
-
-    background-color: var(--header-primary);
+    height: 24px;
+    margin-top: var(--content-spacing);
+    text-align: center;
 }
