@@ -51,7 +51,7 @@ body h1, p {
 /*Container (Holds all)*/
 
 /*All Content Presets*/
-.container div, .container footer {
+.container div, .footer, .flex__aside {
     background: var(--background--color);
 }
 
@@ -87,18 +87,13 @@ body h1, p {
 }
 
 /*Main*/
-.container main {
+.flex__main {
     background: transparent;
     !important;
-    width: 74%;
+    width: 75%;
 }
 
 /*Wrapper (holds each block of content in main)*/
-
-.wrapper__title:first-child {
-    margin-top: 0 !important;
-
-}
 
 .wrapper__title, .sidebar__title{
     background: var(--header--background--gradient) !important;
@@ -110,6 +105,14 @@ body h1, p {
     padding: 2px 0 2px 23px;
 }
 
+.content__wrapper:first-child {
+    margin-top: 0 !important;
+}
+
+.content__wrapper {
+    margin-top: var(--content-spacing);
+}
+
 .wrapper__content {
     padding: 24px;
 }
@@ -118,9 +121,33 @@ body h1, p {
     margin: 0;
 }
 
+/*Sidebar*/
+
+.flex__aside {
+    width: 30%;
+    margin-left: var(--content-spacing);
+}
+
+/*Navigator*/
+
+.sidebar__navigator {
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar__navigator ul {
+    margin-left: 0;
+    padding-left: 30px;
+    list-style: "> ";
+}
+
 /*Footer*/
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 24px;
     margin-top: var(--content-spacing);
     text-align: center;
+    padding: 2px 0;
 }
