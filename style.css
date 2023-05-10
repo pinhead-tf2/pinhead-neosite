@@ -16,6 +16,7 @@
     --border--color: rgba(17, 17, 27, 1); /*Catppuccin Mocha Crust*/
     /*Start: #090979 | End: #00D4FF | Generator: https://www.learnui.design/tools/gradient-generator.html*/
     --page--background--gradient: linear-gradient(25deg, #090979, #002e96, #004bb0, #0067c6, #0082d8, #009ee7, #00b9f4, #00d4ff);
+    --page--background--bisexualgradient: linear-gradient(25deg, rgba(0,56,168,1) 0%, rgba(0,56,168,1) 20%, rgba(155,79,150,1) 50%, rgba(214,2,112,1) 80%, rgba(214,2,112,1) 100%);
     /*Start: #620085 | End: #005ca4  | Generator: https://www.learnui.design/tools/gradient-generator.html*/
     --header--background--gradient: linear-gradient(0deg, #620085, #571e8e, #4c2e96, #3f3a9b, #3144a0, #224da2, #1155a4, #005ca4);
     --border: 2px solid var(--background--color);
@@ -35,7 +36,7 @@ html, body {
 }
 
 body {
-    background-image: var(--page--background--gradient);
+    background-image: var(--page--background--bisexualgradient);
     background-attachment: fixed;
 }
 
