@@ -97,7 +97,7 @@ main {
 
   h1 {
     font-size: 20px;
-    padding: variables.$text-small-padding 0 variables.$text-small-padding variables.$text-medium-padding;
+    padding: variables.$text-small-padding 0 variables.$text-small-padding variables.$text-large-padding - 4px;
   }
 }
 
