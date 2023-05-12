@@ -133,7 +133,7 @@ footer {
     border-right: 0;
   }
   nav ul {
-    list-style: none !important;
+    list-style: none;
   }
   main {
     width: 100%;
