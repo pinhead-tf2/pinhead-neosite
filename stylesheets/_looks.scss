@@ -149,36 +149,50 @@ footer {
 // Please go check out their site!
 
 @media only screen and (max-width: 640px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .header,
+  .wrapper__title,
+  .sidebar__title {
+    border-left: 0;
+    border-right: 0;
+  }
+
   nav ul {
-    list-style-image:none;
-    list-style-type:none;
+    // i know this shouldnt be used but i cant be bothered enough to find the source to this override
+    list-style: none !important;
   }
-  #flex {
-    flex-wrap:wrap;
-  }
+
   main {
-    width:100%;
-    order:2;
+    width: 100%;
+    order: 2;
   }
+
   aside {
-    display:block;
-    width:100%;
-    order:1;
-    margin-left:0;
+    display: block;
+    width: 100%;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: variables.$content-spacing;
   }
+
   nav ul {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
+
   nav ul li {
     padding-right:10px;
   }
+
   nav ul > ul {
-    display:none;
+    display: none;
   }
 }
 @media only screen and (max-height: 640px) {
   nav ul > ul {
-    display:none;
+    display: none;
   }
 }
