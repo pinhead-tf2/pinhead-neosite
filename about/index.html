@@ -6,68 +6,53 @@
   <title>pinhead's site</title>
   <meta content="the personal website of pinhead"
         name="description">
-  <!--Load styles-->
+  <!--Load fonts-->
   <link href="https://rsms.me/" rel="preconnect">
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-  <link href="style.css" media="all" rel="stylesheet" type="text/css">
+  <!--Serves the navigation bar from /assets-->
+  <script src="../assets/scripts/loader.js"></script>
+  <!--Main stylesheet-->
+  <link href="../stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--All Content Holder-->
 <div class="container">
   <!--Header-->
   <div class="header">
-    <h1 class="header__title">
+    <h1>
       pinhead's site
     </h1>
   </div>
   <!--Flex Holder-->
   <div class="flex">
-    <main class="flex__main">
-      <!--        Holds each block of text/info, copy and paste for each entry-->
+    <main>
+      <!--Holds each block of text/info, copy and paste for each entry-->
       <div class="content__wrapper">
         <div class="wrapper__title">
           <h1>
-            heya
+            title
           </h1>
         </div>
         <div class="wrapper__content">
           <p>
-            welcome to my page, i'm pinhead. this is my own little edge of the internet where i share info
-            about me and act as a rest stop for people to make their mark.
+            content
           </p>
         </div>
       </div>
-      <div class="content__wrapper">
-        <div class="wrapper__title">
-          <h1>
-            current spotify song
-          </h1>
-        </div>
-        <div class="wrapper__content">
-          <a href="https://github.com/kittinan/spotify-github-profile"><img src="https://spotify-github-profile.vercel.app/api/view?uid=qk13ch706fw6k5w052mot3ioa&cover_image=true&theme=natemoo-re&show_offline=true&background_color=1e1e2e&interchange=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Github Profile"></a>
-        </div>
-      </div>
     </main>
-    <aside class="flex__aside">
+    <aside>
       <div class="sidebar__title">
         <h1>
           navigation
         </h1>
       </div>
-      <nav class="sidebar__navigator">
-        <ul>
-          <li>
-            <a href="/">
-              Home
-            </a>
-          </li>
-        </ul>
+      <nav class="sidebar__navigator" id="nav">
       </nav>
     </aside>
   </div>
   <!--Footer-->
-  <footer class="footer">
-    made with lots of effort and ♥ | <a href="https://github.com/pinhead-tf2/pinhead-website">source code</a>
+  <footer>
+    made with lots of effort and ♥ |&nbsp<a href="https://github.com/pinhead-tf2/pinhead-website">source code</a>
   </footer>
 </div>
 <!--Script Imports-->
