@@ -3,95 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description"
-    content="the personal website of pinhead">
     <title>pinhead's site</title>
-    <link href="assets/inter-web/inter.css" rel="stylesheet" type="text/css">
-    <link href="style.css" media="all" rel="stylesheet" type="text/css">
+    <meta content="the personal website of pinhead"
+          name="description">
+    <!--Load fonts-->
+    <link href="https://rsms.me/" rel="preconnect">
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <!--Serves the navigation bar from /assets-->
+    <script src="assets/scripts/loader.js"></script>
+    <!--Main stylesheet-->
+    <link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="header">
-    <h1 class="title">
-        pinhead's site
-    </h1>
-    <p id="random-quote"></p>
+<!--All Content Holder-->
+<div class="container">
+<!--Header-->
+    <div class="header">
+        <h1>
+            pinhead's site
+        </h1>
+    </div>
+<!--Flex Holder-->
+    <div class="flex">
+        <main>
+<!--        Holds each block of text/info, copy and paste for each entry-->
+            <div class="content__wrapper">
+                <div class="wrapper__title">
+                    <h1>
+                        heya
+                    </h1>
+                </div>
+                <div class="wrapper__content">
+                    <p>
+                        welcome to my page, i'm pinhead. this is my own little edge of the internet where i share things
+                        i do or like for people to see, so thanks for checking this little passion project out.
+                    </p>
+                </div>
+            </div>
+            <div class="content__wrapper">
+                <div class="wrapper__title">
+                    <h1>
+                        current spotify song
+                    </h1>
+                </div>
+                <div class="wrapper__content">
+                    <a href="https://github.com/kittinan/spotify-github-profile"><img src="https://spotify-github-profile.vercel.app/api/view?uid=qk13ch706fw6k5w052mot3ioa&cover_image=true&theme=natemoo-re&show_offline=true&background_color=1e1e2e&interchange=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Github Profile"></a>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="sidebar__title">
+                <h1>
+                    navigation
+                </h1>
+            </div>
+            <nav class="sidebar__navigator" id="nav">
+            </nav>
+        </aside>
+    </div>
+<!--Footer-->
+    <footer>
+        made with lots of effort and ♥ |&nbsp<a href="https://github.com/pinhead-tf2/pinhead-website">source code</a>
+    </footer>
 </div>
+<!--Script Imports-->
 
-<div class="content">
-    <div class="main">
-        <div class="info">
-            <h2 class="header-body">Heya</h2>
-            <p class="paragraph-body">
-                welc
-                <br><br>
-                (about me stuff)
-                <br><br>
-                move around using the interactive page navigator at the bottom left
-            </p>
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="side-content">
-            <h2 class="header-body">Secrets</h2>
-            <p class="paragraph-body">
-                ??
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="slideout">
-        <label class="slideout-label" id="slideout-label">root/</label>
-        <span class="slideout-cursor" id="slideout-cursor">█</span>
-        <div id="slideout-content" class="slideout-content">
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="page_switcher.js"></script>
-<script src="random_quote_populator.js"></script>
+<!--DO NOT REMOVE (Enables Vercel Insights)-->
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
-
-
-<!--
-Hey partner. Welcome to the first secret. I suggest you use a little 'judgement' on one of those switchers there.
-    ████████████████████████████████████████████████████████████████████████████████
-    █████████████████████████████████████▀▀▀▀░▒▒▒▒▒▓████████████████████████████████
-    ███████████████████████████████▀▀░▒▒▒▒▒▒▒▒▒▒▒▒▒╢▒▒▒▓████████████████████████████
-    ███████████████████████████▀░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╣╢▓████████████████████████
-    █████████████████████████░▒▒░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒╢╢▓╣██████████████████████
-    ███████████████████████░▒░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▓▓███████████████████
-    ██████████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒╢▓▓▓▓██████████████████
-    █████████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒╣╫▓▓▓▓█████████████████
-    ████████████████████░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒╣╫▓▓▓▓▌████████████████
-    ███████████████████▌▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒╢╫▓▓▓▓▓████████████████
-    ███████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒╢▓▓▓▓▓▓▓███████████████
-    ██████████████████░▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▓▓▓▓▐███████████████
-    ████████████████░░░▒▒▒░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢╫▓▓▓▓▓████████████████
-    ██████████████████▓███▓▓▓█████████▓▄▄▄▄▄▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒╣╫▓▓██▓████████████████
-    █████████████████████▄████▓▓████████████████████████▄▄▒▒▒▓▓▓▓▓▓▓▓███████████████
-    ██████████████████████▀██▓▓█▓▓▓▓▓▓▓▓▓█▓█▀██████████████████▓▓▓▓▓▓▓██████████████
-    █████████████████████▒▓▒▒░▓▓█▓▓▓▓▓▓▓▓██▌░╢██▓██▓▓▓███████▌▒▒▓▓▓▓████████████████
-    █████████████████████▌▒▒▒░░▀▀▓▓▓▓▓▓██▓▓▒░▒▓▓█████▓██▓█▓██▒▒▒████████████████████
-    ██████████████████████▒▒▒▒▒░░░░▀▀▀▀▓▒▒╢▒░▒▒▀▓█▓▒▓▓▓▓▓▓▓█▌▒▓▐████████████████████
-    ██████████████████████▌░▒▒▒▒░░░░░░░▒╫╬╬▒▒▒▓███▓▒▒▒▒▒╢▓▓█▓▒▒█████████████████████
-    ████████████████████████▒▒▒▒▒▒▒▒░░░░░░░░░▀▀▀▒▒╣╣╣╢▓▓╣▓▓██▒██████████████████████
-    ████████████████████████▌▒▒▒▒▒▒░▀▒░▒`▒""▒╜╙╨╜▓▀▓██▓▓▓▓███▓██████████████████████
-    ████████████████████████▌╣▒▒▒▒▒░░░▒¢^^  - ─╜j▀▓▓╢▓▓▓▓▓███▓██████████████████████
-    █████████████████████████╣╣▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▓▓▓▓▓██████████████████████████
-    █████████████████████████╣╣╣╣▒▒▒▒▒▒▒▒▒▒▒▒▒▒╣╣╢╫▓▓▓▓▓▓███▓███████████████████████
-    █████████████████████████▒╣╣╣╣▒▒▒▒▒▒▒▒▒▒▒▒▒╣╢╢╫▓▓▓▓▓████████████████████████████
-    ███████████████████████▓▓▌░▓╣╣╣▒▒▒▒▒▒▒▒▒▒▒▒╣╢╢▓▓▓▓▓███▓▓█▓██████████████████████
-    █████████████████████▒╫▓█▌▒░▀▓╣╣╣╣▒▒▒▒▒▒▒╣╢╢╫▓▓▓▓████▓█▓████▓████████████▓▓█████
-    ███████████████████▌▒▒╢▓██▒░▒░▒▀█▓▓▓▓▓▓▓▓▓▓▓▓██████▓█████████▓██████████████████
-    ████████████████▓▀▒▒▒▒▒▓██▒░░▒▒▒▒▒▀█████████████▓▓████████████▓█████████████████
-    ███████████▓▓▒▒▒▒╣▒▒▒▒▒▓█▓░░░░░░░▒▒▒▒▒▒▀▀▓▓▓▓▓▓█▓▓▓▓▓███████▓███████████████████
-    ███████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▌░░░░░░░░░▒▒▒▒▒▒▒▒▒▀▓▓▓▓▓▓▓▓███▓▒╣╣▓███▓▓▒▒▒▒╣▓▓▓█████
-    █▓▓▓██▌╣▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓██▒▒╣╢╫▓███▓▒▒▒╣╣╣╢╢▓█▓█▓█
-    ▓▓▓▓██╣▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▌░░░░░░░░░░░░▒▒▒▒▒▒▒▒╣╢╣▓▓▓▒▒▒╣╫▓▓▓███▌▒▒╣╣╣╣╢╫▓█▓▓▓
-    ▓▓▓▓██╣▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╢▓▓▓░░░░░░░░░░░░▒▒▒▒▒▒▒╣╢╫▓▓▌▒▒╣╢╫▓▓▓███▌▒▒▒╣╣╣╢╢▓▓▓▓▓
-    ▓▓▓▓▒╣▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▄░░░░░░░░░▒▒▒▒▒▒▒▒╣╣╫▓▒▒▒╢╢╢▓▓▓▓▓▓▓▓▒▒▒╣╣╢▒▓▓▓▓▓▓
--->

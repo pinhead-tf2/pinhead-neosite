@@ -1,0 +1,179 @@
+/*Catppuccin Mocha Green*/
+/*Start: #090979 | End: #00D4FF | Generator: https://www.learnui.design/tools/gradient-generator.html*/
+/*Start: #d60270 | Middle: #0038a8 | End: #009ee7 | Generator: https://cssgradient.io*/
+/*Currently unused*/
+/*Start: #620085 | End: #005ca4  | Generator: https://www.learnui.design/tools/gradient-generator.html*/
+/*--header--background--gradient: linear-gradient(0deg, #620085, #571e8e, #4c2e96, #3f3a9b, #3144a0, #224da2, #1155a4, #005ca4);*/
+/*Start: #d60270 | End: #4c0094 | Generator: https://cssgradient.io*/
+/*Start: #d60270 | Middle 71: #6a008c | End: #4c0094 | Generator: https://cssgradient.io*/
+/*--header--background--gradient: linear-gradient(25deg, rgba(214,2,112,1) 0%, rgba(106,0,140,1) 71%, rgba(76,0,148,1) 100%);*/
+.wrapper__title,
+.sidebar__title, .header {
+  border: 3px solid rgb(48, 52, 70);
+}
+
+.flex, footer, .header {
+  display: flex;
+}
+
+footer, .header {
+  align-items: center;
+  justify-content: center;
+}
+
+main, .flex {
+  background: transparent;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: clip;
+  color: rgb(205, 214, 244);
+  text-overflow: ellipsis;
+}
+
+body {
+  background-image: linear-gradient(25deg, #090979, #002e96, #004bb0, #0067c6, #0082d8, #009ee7, #00b9f4, #00d4ff);
+  background-attachment: fixed;
+}
+body a {
+  color: rgb(166, 227, 161);
+}
+body h1,
+body p {
+  margin: 0;
+  font-weight: normal;
+}
+body ul {
+  list-style: "> ";
+}
+
+.header,
+.wrapper__title,
+.sidebar__title {
+  background: linear-gradient(25deg, rgb(214, 2, 112) 0%, rgb(76, 0, 148) 100%);
+}
+
+.header {
+  height: 150px;
+  margin-bottom: 5px;
+  border-top: 0;
+}
+.header h1 {
+  font-size: 64px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+main {
+  width: 75%;
+}
+
+.wrapper__title,
+.sidebar__title {
+  border-bottom: 0;
+}
+.wrapper__title h1,
+.sidebar__title h1 {
+  font-size: 20px;
+  padding: 2px 0 2px 20px;
+}
+
+.content__wrapper:first-child {
+  margin: 0;
+}
+
+.content__wrapper {
+  margin-top: 5px;
+  background: rgb(48, 52, 70);
+}
+
+.wrapper__content {
+  padding: 24px;
+}
+.wrapper__content p {
+  margin: 0;
+}
+
+aside {
+  width: 30%;
+  margin-left: 5px;
+  background: rgb(48, 52, 70);
+}
+
+.sidebar__navigator {
+  position: sticky;
+  top: 20px;
+}
+.sidebar__navigator ul {
+  margin-left: 0;
+  padding-left: 30px;
+  list-style: "> ";
+}
+
+footer {
+  background: rgb(48, 52, 70);
+  height: 24px;
+  margin-top: 5px;
+  text-align: center;
+  padding: 2px 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .header,
+  .wrapper__title,
+  .sidebar__title {
+    border-left: 0;
+    border-right: 0;
+  }
+  nav ul {
+    list-style: none;
+  }
+  main {
+    width: 100%;
+    order: 2;
+  }
+  aside {
+    display: block;
+    width: 100%;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    padding-right: 10px;
+  }
+  nav ul > ul {
+    display: none;
+  }
+}
+@media only screen and (max-height: 640px) {
+  nav ul > ul {
+    display: none;
+  }
+}
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+/*Imports*/
+
+/*# sourceMappingURL=style.css.map */

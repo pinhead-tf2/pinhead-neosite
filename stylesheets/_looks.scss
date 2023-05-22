@@ -1,0 +1,204 @@
+@use "variables";
+@use "sass:math";
+
+// Recyclables
+%border {
+  border: 3px solid variables.$background-color;
+}
+
+%flex-it {
+  display: flex;
+}
+
+%flex-center {
+  @extend %flex-it;
+  align-items: center;
+  justify-content: center;
+}
+
+%transparent-bg {
+  background: transparent;
+}
+
+// Content
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: clip;
+
+  color: variables.$text-color;
+  text-overflow: ellipsis;
+}
+
+body {
+  background-image: variables.$page-background-gradient;
+  background-attachment: fixed;
+
+  a {
+    color: variables.$link-color;
+  }
+
+  h1,
+  p {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  ul {
+    //margin-left: 0;
+    //padding-left: 30px;
+    list-style: "> ";
+  }
+}
+
+%header-background, {
+  background: variables.$header-background-gradient
+}
+
+%title {
+  @extend %header-background;
+  @extend %border;
+}
+
+.header,
+.wrapper__title,
+.sidebar__title {
+  @extend %header-background;
+}
+
+.header {
+  @extend %flex-center;
+  height: 150px;
+  margin-bottom: variables.$content-spacing;
+  @extend %border;
+  border-top: 0;
+
+  h1 {
+    font-size: 64px;
+  }
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.flex {
+  @extend %flex-it;
+  @extend %transparent-bg;
+}
+
+main {
+  @extend %transparent-bg;
+  width: 75%;
+}
+
+.wrapper__title,
+.sidebar__title {
+  @extend %border;
+  border-bottom: 0;
+
+  h1 {
+    font-size: 20px;
+    padding: variables.$text-small-padding 0 variables.$text-small-padding variables.$text-large-padding - 4px;
+  }
+}
+
+.content__wrapper:first-child {
+  margin: 0;
+}
+
+.content__wrapper {
+  margin-top: variables.$content-spacing;
+  background: variables.$background-color;
+}
+
+.wrapper__content {
+  padding: variables.$text-large-padding;
+
+  p {
+    margin: 0;
+  }
+}
+
+aside {
+  width: 30%;
+  margin-left: variables.$content-spacing;
+  background: variables.$background-color;
+}
+
+.sidebar__navigator {
+  position: sticky;
+  top: 20px;
+
+  ul {
+    margin-left: 0;
+    padding-left: 30px;
+    list-style: "> ";
+  }
+}
+
+footer {
+  @extend %flex-center;
+  background: variables.$background-color;
+  height: 24px;
+  margin-top: variables.$content-spacing;
+  text-align: center;
+  padding: variables.$text-small-padding 0;
+}
+
+// Mobile Overrides
+// Original code belongs to https://sadgrl.online
+// Please go check out their site!
+
+@media only screen and (max-width: 640px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .header,
+  .wrapper__title,
+  .sidebar__title {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  nav ul {
+    // i know this shouldnt be used but i cant be bothered enough to find the source to this override
+    list-style: none;
+  }
+
+  main {
+    width: 100%;
+    order: 2;
+  }
+
+  aside {
+    display: block;
+    width: 100%;
+    order: 1;
+    margin-left: 0;
+    margin-bottom: variables.$content-spacing;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    padding-right:10px;
+  }
+
+  nav ul > ul {
+    display: none;
+  }
+}
+@media only screen and (max-height: 640px) {
+  nav ul > ul {
+    display: none;
+  }
+}

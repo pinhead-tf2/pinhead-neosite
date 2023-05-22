@@ -1,73 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description"
-          content="various ways to contact pinhead">
-    <title>pinhead's site/contact</title>
-    <link href="../assets/inter-web/inter.css" rel="stylesheet" type="text/css">
-    <link href="/style.css" media="all" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>pinhead's site</title>
+  <meta content="the personal website of pinhead"
+        name="description">
+  <!--Load fonts-->
+  <link href="https://rsms.me/" rel="preconnect">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <!--Serves the navigation bar from /assets-->
+  <script src="../assets/scripts/loader.js"></script>
+  <!--Main stylesheet-->
+  <link href="../stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="header">
-    <h1 class="title">
-        pinhead's site
+<!--All Content Holder-->
+<div class="container">
+  <!--Header-->
+  <div class="header">
+    <h1>
+      pinhead's site
     </h1>
-    <p id="random-quote"></p>
+  </div>
+  <!--Flex Holder-->
+  <div class="flex">
+    <main>
+      <!--Holds each block of text/info, copy and paste for each entry-->
+      <div class="content__wrapper">
+        <div class="wrapper__title">
+          <h1>
+            primary contacts
+          </h1>
+        </div>
+        <div class="wrapper__content">
+          <p>
+            these are just the services i use most or are easily contacted through, feel free to reach out using them
+          </p>
+          <ul>
+            <li>
+              <p>
+                Discord: pinhead#4946
+              </p>
+            </li>
+            <li>
+              <a href="https://discord.gg/uC5mqgK597">
+                Discord Server
+              </a>
+            </li>
+            <li>
+              <a href="https://tumblr.com/pinheadtf2">
+                Steam
+              </a>
+            </li>
+            <li>
+              <a href="mailto:pinhead@pinhead.dev">
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content__wrapper">
+        <div class="wrapper__title">
+          <h1>
+            other services
+          </h1>
+        </div>
+        <div class="wrapper__content">
+          <p>
+            any services i have an account on that can be used to see what i do
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/pinhead-tf2">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/user/qk13ch706fw6k5w052mot3ioa">
+                Spotify
+              </a>
+            </li>
+            <li>
+              <a href="https://tumblr.com/pinheadtf2">
+                Tumblr
+              </a>
+            </li>
+            <li>
+              <a href="https://tech.lgbt/@pinhead">
+                tech.lgbt (Mastodon)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UChIIY8LS_X9lr8cdYj8m2DQ">
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/pinheadtf2">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <p>
+                Roblox: pinheadtf2 (@Gameknight6916)
+              </p>
+            </li>
+            <li>
+              <p>
+                Xbox: CaptainCritz957
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="sidebar__title">
+        <h1>
+          navigation
+        </h1>
+      </div>
+      <nav class="sidebar__navigator" id="nav">
+      </nav>
+    </aside>
+  </div>
+  <!--Footer-->
+  <footer>
+    made with lots of effort and ♥ |&nbsp<a href="https://github.com/pinhead-tf2/pinhead-website">source code</a>
+  </footer>
 </div>
+<!--Script Imports-->
 
-<div class="content">
-    <div class="main">
-        <div class="info">
-            <h2 class="header-body">Contacts & Socials</h2>
-            <p class="paragraph-body">
-                These are the services I'm most active on and can be easily contacted through, come say hi!
-            </p>
-            <ul>
-                <li>Discord: pinhead#4946</li>
-                <li><a href="https://discord.gg/uC5mqgK597" title="pinhead's server" target="_blank" rel="noopener noreferrer">Discord Server</a></li>
-                <li><a href="https://steamcommunity.com/id/pinheadtf2/" title="pinheadtf2" target="_blank" rel="noopener noreferrer">Steam</a></li>
-                <li><a href="https://tumblr.com/pinheadtf2" title="pinheadtf2" target="_blank" rel="noopener noreferrer">Tumblr</a></li>
-            </ul>
-        </div>
-        <div class="info">
-            <h2 class="header-body">Other Services</h2>
-            <p class="paragraph-body">
-                These are just various services I have accounts on and allow people to view, take a look and see what else I do!
-            </p>
-            <ul>
-                <li><a href="https://github.com/pinhead-tf2" title="pinhead-tf2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://open.spotify.com/user/qk13ch706fw6k5w052mot3ioa" title="pinhead" target="_blank" rel="noopener noreferrer">Spotify</a></li>
-                <li>Roblox: pinheadtf2 (@Gameknight6916)</li>
-                <li>Xbox: CaptainCritz957</li>
-                <li><a href="https://www.youtube.com/channel/UChIIY8LS_X9lr8cdYj8m2DQ" title="pinhead" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                <li><a href="https://www.twitch.tv/pinhead_tf2" title="pinhead_tf2" target="_blank" rel="noopener noreferrer">Twitch</a></li>
-                <li><a href="https://twitter.com/pinheadtf2" title="@pinheadtf2" target="_blank" rel="noopener noreferrer">Twitter (unused now)</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="side-content">
-            <h2 class="header-body">Mini-explanation</h2>
-            <p class="paragraph-body">
-                The top links you see there are all my most used things and its by far the easiest method to get ahold of me, or just to see what I'm like! The other section is for things I use less or are just generally non-contact methods. Feel free to poke around!
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <div class="slideout">
-        <label class="slideout-label" id="slideout-label">root/</label>
-        <span class="slideout-cursor" id="slideout-cursor">█</span>
-        <div id="slideout-content" class="slideout-content">
-        </div>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="../page_switcher.js"></script>
-<script src="../random_quote_populator.js"></script>
+<!--DO NOT REMOVE (Enables Vercel Insights)-->
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
