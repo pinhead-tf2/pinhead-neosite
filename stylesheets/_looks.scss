@@ -27,7 +27,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: clip;
+  overflow: auto;
 
   color: variables.$text-color;
   text-overflow: ellipsis;
@@ -48,9 +48,7 @@ body {
   }
 
   ul {
-    //margin-left: 0;
-    //padding-left: 30px;
-    list-style: "> ";
+    list-style: "- ";
   }
 }
 
@@ -167,7 +165,6 @@ footer {
   }
 
   nav ul {
-    // i know this shouldnt be used but i cant be bothered enough to find the source to this override
     list-style: none;
   }
 

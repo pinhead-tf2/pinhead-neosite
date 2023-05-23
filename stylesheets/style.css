@@ -30,7 +30,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: clip;
+  overflow: auto;
   color: rgb(205, 214, 244);
   text-overflow: ellipsis;
 }
@@ -48,7 +48,7 @@ body p {
   font-weight: normal;
 }
 body ul {
-  list-style: "> ";
+  list-style: "- ";
 }
 
 .header,

@@ -1,5 +1,5 @@
 window.onload = () => {
-    fetch('/assets/templates/navigator_content.html')
+    fetch('/assets/inserts/navigator_content.html')
         .then(data => {
             return data.text()
         })
