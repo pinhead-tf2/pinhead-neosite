@@ -94,10 +94,10 @@ main {
   background: rgb(48, 52, 70);
 }
 
-.wrapper__content {
+.wrapper__body {
   padding: 24px;
 }
-.wrapper__content p {
+.wrapper__body p {
   margin: 0;
 }
 
