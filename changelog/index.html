@@ -36,6 +36,25 @@
             <div class="content__wrapper">
                 <div class="wrapper__title">
                     <h1>
+                        v2.2 - webringify
+                    </h1>
+                </div>
+                <div class="wrapper__body">
+                    <p>
+                        Added a really, really rough webring navigator to the site, only on the homepage for now.
+                        I'll have to add it to each page but this would involve some small refactoring,
+                        so for now it will stay this way until I get some good time to myself.
+                    </p>
+                    <ul>
+                        <li>Added a webring field beneath the navigator</li>
+                        <li>Fixed changelog list formatting</li>
+                        <li>Changed structure of sidebar to be compatible with webring field</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__wrapper">
+                <div class="wrapper__title">
+                    <h1>
                         v2.1 - the discord update
                     </h1>
                 </div>
@@ -44,13 +63,9 @@
                         Spiced up the site to be more compatible with Discord embeds.
                     </p>
                     <ul>
-                        <li>
-                            <ul>
-                                <li>Added content & images in the meta fields</li>
-                                <li>Added a quick Discord redirect</li>
-                                <li>Updated contacts to include the new Discord username format</li>
-                            </ul>
-                        </li>
+                        <li>Added content & images in the meta fields</li>
+                        <li>Added a quick Discord redirect</li>
+                        <li>Updated contacts to include the new Discord username format</li>
                     </ul>
                 </div>
             </div>
@@ -79,13 +94,15 @@
             </div>
         </main>
         <aside>
-            <div class="sidebar__title">
-                <h1>
-                    navigation
-                </h1>
+            <div class="sidebar__content__wrapper">
+                <div class="sidebar__title">
+                    <h1>
+                        navigation
+                    </h1>
+                </div>
+                <nav class="sidebar__navigator" id="nav">
+                </nav>
             </div>
-            <nav class="sidebar__navigator" id="nav">
-            </nav>
         </aside>
     </div>
     <!--Footer-->

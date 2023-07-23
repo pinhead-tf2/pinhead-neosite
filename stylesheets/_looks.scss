@@ -122,13 +122,33 @@ main {
   }
 }
 
+// this is where the sidebar hellscape starts
+
 aside {
   width: 30%;
   margin-left: variables.$content-spacing;
+  background: transparent;
+}
+
+.sidebar__content__wrapper:first-child {
+  margin: 0;
+}
+
+.sidebar__content__wrapper {
+  margin-top: variables.$content-spacing;
   background: variables.$background-color;
 }
 
+.sidebar__body {
+  padding: variables.$text-medium-padding;
+}
+
+#webring_right {
+  float: right;
+}
+
 .sidebar__navigator {
+  padding-bottom: variables.$text-small-padding;
   position: sticky;
   top: 20px;
 
