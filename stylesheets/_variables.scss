@@ -1,29 +1,5 @@
-/// Catppuccin Frappé Base, content background & border color
-$background-color: rgba(48, 52, 70, 1);
-
-/// Catppuccin Mocha Text, text color
-$text-color: rgba(205, 214, 244, 1);
-
-/*Catppuccin Mocha Green*/
-$link-color: rgba(166, 227, 161, 1);
-
-/*Start: #090979 | End: #00D4FF | Generator: https://www.learnui.design/tools/gradient-generator.html*/
-$page-background-gradient: linear-gradient(25deg, #090979, #002e96, #004bb0, #0067c6, #0082d8, #009ee7, #00b9f4, #00d4ff);
-
-/*Start: #d60270 | Middle: #0038a8 | End: #009ee7 | Generator: https://cssgradient.io*/
-/*Currently unused*/
-$page-background-gradient--bi: linear-gradient(25deg, rgba(214,2,112,1) 0%, rgba(0,56,168,1) 50%, rgba(0,158,231,1) 100%);
-
-/*Start: #620085 | End: #005ca4  | Generator: https://www.learnui.design/tools/gradient-generator.html*/
-/*--header--background--gradient: linear-gradient(0deg, #620085, #571e8e, #4c2e96, #3f3a9b, #3144a0, #224da2, #1155a4, #005ca4);*/
-
-/*Start: #d60270 | End: #4c0094 | Generator: https://cssgradient.io*/
-$header-background-gradient: linear-gradient(25deg, rgba(214,2,112,1) 0%, rgba(76,0,148,1) 100%);
-
-/*Start: #d60270 | Middle 71: #6a008c | End: #4c0094 | Generator: https://cssgradient.io*/
-/*--header--background--gradient: linear-gradient(25deg, rgba(214,2,112,1) 0%, rgba(106,0,140,1) 71%, rgba(76,0,148,1) 100%);*/
-
-$content-spacing: 5px;
-$text-small-padding: 2px;
-$text-medium-padding: 8px;
-$text-large-padding: 24px;
+$very-large-padding: 40px;
+$large-padding: 20px;
+$medium-padding: 10px;
+$small-padding: 8px;
+$button-padding: 14px;
