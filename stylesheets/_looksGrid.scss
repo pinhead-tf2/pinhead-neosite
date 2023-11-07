@@ -1,0 +1,47 @@
+@import "mocha";
+@import "variables";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+    overflow: auto;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'menu main';
+    background: $base;
+    color: $text;
+
+    a {
+        color: $green;
+    }
+
+    h1, h2, h3 {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}

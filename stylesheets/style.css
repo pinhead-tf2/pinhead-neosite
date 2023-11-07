@@ -7,7 +7,17 @@ html, body {
   overflow: auto;
 }
 
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
 body {
+  display: grid;
+  grid-template-areas: "menu main";
   background: #1e1e2e;
   color: #cdd6f4;
 }
@@ -26,40 +36,6 @@ body h2 {
 }
 body h3 {
   font-size: 24px;
-}
-
-.flex {
-  display: flex;
-}
-
-aside {
-  background: #313244;
-  margin: 40px;
-  width: 25%;
-  height: 100%;
-  border-radius: 16px;
-  -moz-border-radius: 16px;
-}
-
-.sidebar__identifier {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-.sidebar__identifier img {
-  margin: 40px 40px 0 40px;
-}
-.sidebar__identifier h1, .sidebar__identifier h3 {
-  text-align: center;
-}
-.sidebar__identifier h1 {
-  color: #89dceb;
-}
-
-#profile_picture {
-  border-radius: 50%;
-  background: #45475a;
 }
 
 :root {
