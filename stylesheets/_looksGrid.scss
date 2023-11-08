@@ -16,6 +16,16 @@ body {
     background: $base;
     color: $text;
 
+    .feather {
+        width: 24px;
+        height: 24px;
+        stroke: $overlay2;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
     a {
         color: $green;
     }
@@ -77,6 +87,8 @@ body {
         .infocard__connections {
             list-style: none;
             margin: $small-space $large-space 0 $large-space;
+            padding: 0;
+            font-size: 16px;
         }
     }
 
