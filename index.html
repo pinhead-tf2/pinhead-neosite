@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>pinhead.dev</title>
-    <link rel="icon" type="image/x-icon" href="assets/profile_pictures/izumi.png">
+    <link href="assets/profile_pictures/izumi.png" rel="icon" type="image/x-icon">
     <!--Discord Rich Embed Data-->
-    <meta property="og:site_name" content="pinhead.dev">
-    <meta property="og:url" content="https://pinhead.dev">
-    <meta property="og:title" content="pinhead.dev">
-    <meta property="og:type" content="website">
-    <meta name="og:image" itemprop="image" content="assets/profile_pictures/mizu.png">
-    <meta name="theme-color" data-react-helmet="true" content="#2196f3">
+    <meta content="pinhead.dev" property="og:site_name">
+    <meta content="https://pinhead.dev" property="og:url">
+    <meta content="pinhead.dev" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="assets/profile_pictures/mizu.png" itemprop="image" name="og:image">
+    <meta content="#2196f3" data-react-helmet="true" name="theme-color">
     <!--Load fonts-->
     <link href="https://rsms.me/" rel="preconnect">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
@@ -19,19 +19,66 @@
     <link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="flex">
 <!--Left side panel-->
-    <aside class="menu">
-        <div class="sidebar__identifier">
-            <img src="/assets/profile_pictures/mizu.png" id="profile_picture" alt="Profile picture depicting a blue humanoid slime">
-            <h1 id="username">pinhead</h1>
-            <h3 id="username__subtitle">A good title I gave myself</h3>
-        </div>
-    </aside>
-<!--Main body content-->
-    <main class="main">
+<aside class="sidebar">
+    <div class="sidebar__infocard">
+        <img alt="Profile picture depicting a blue humanoid slime" id="profile_picture"
+             src="/assets/profile_pictures/mizu.png">
+        <h1 id="username">pinhead</h1>
+        <h3 id="username__subtitle">A good title I gave myself</h3>
 
-    </main>
-</div>
+        <ul class="infocard__connections">
+            <li>
+                <!--            svg icon goes here -->
+                <span>></span> <!-- placeholder -->
+                <span>Minnesota, USA</span>
+                <span class="subtext">[currenttimejs] (UTC−06:00)</span>
+            </li>
+            <li>
+                <!--            svg icon goes here -->
+                <span>></span> <!-- placeholder -->
+                <a href="https://discord.gg/uC5mqgK597">pinhead's server</a>
+            </li>
+            <li>
+                <!--            svg icon goes here -->
+                <span>></span> <!-- placeholder -->
+                <a href="mailto:pinhead@pinhead.dev">pinhead@pinhead.dev</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar__navblock">
+        <ul class="navblock__pagelist">
+            <li>
+                <span>Home</span>
+            </li>
+            <li>
+                <span>About</span>
+            </li>
+            <li>
+                <span>Contact</span>
+            </li>
+        </ul>
+
+        <div class="navblock__webring">
+            <button class="webring__button" id="webring_left" name="webring_left"
+                    onclick="location.href='https://timayo.gay/'">
+                timayo
+            </button>
+            <a href="https://discord.gg/RSutBnzNCd" id="webring_link">
+                <h3 id="webring_text">
+                    Berry
+                </h3>
+            </a>
+            <button class="webring__button" id="webring_right" name="webring_right"
+                    onclick="location.href='https://vaporeonline.neocities.org/'">
+                blueJay
+            </button>
+        </div>
+    </div>
+</aside>
+<!--Main body content-->
+<main class="main">
+
+</main>
 </body>
 </html>

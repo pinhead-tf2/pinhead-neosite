@@ -10,14 +10,6 @@ html, body {
     overflow: auto;
 }
 
-.menu {
-    grid-area: menu;
-}
-
-.main {
-    grid-area: main;
-}
-
 body {
     display: grid;
     grid-template-areas: 'menu main';
@@ -44,4 +36,97 @@ body {
     h3 {
         font-size: 24px;
     }
+
+    .subtext {
+        color: $subtext0;
+    }
 }
+
+.sidebar {
+    display: grid;
+    grid-area: menu;
+    margin: $very-large-space 0 0 $very-large-space;
+    width: 25%;
+
+    .sidebar__infocard {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background: $surface0;
+        border-radius: 16px;
+        margin-bottom: $large-space;
+
+        #profile_picture {
+            background: $rosewater;
+            border-radius: 50%;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            margin: $large-space $large-space 0 $large-space;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin: 0 $large-space 0 $large-space;
+        }
+
+        h1 {
+            color: $sky;
+        }
+
+        .infocard__connections {
+            list-style: none;
+            margin: $small-space $large-space 0 $large-space;
+        }
+    }
+
+    .sidebar__navblock {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background: $surface0;
+        border-radius: 16px;
+        margin-bottom: $large-space;
+    }
+
+    .navblock__pagelist {
+        list-style: "> ";
+    }
+
+    .navblock__webring {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        .webring__button {
+            max-height: 60px;
+            height: 100%;
+            width: 100%;
+            margin-bottom: $large-space;
+            margin-top: $large-space;
+        }
+
+        #webring_left {
+            margin-left: $large-space;
+            margin-right: $small-space;
+        }
+
+        #webring_right {
+            margin-left: $small-space;
+            margin-right: $large-space;
+        }
+
+        #webring_link {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+}
+

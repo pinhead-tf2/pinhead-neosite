@@ -42,7 +42,7 @@ body {
 
 aside {
     background: $surface0;
-    margin: $very-large-padding;
+    margin: $very-large-space;
     width: 25%;
     height: 100%;
     border-radius: 16px;
@@ -56,7 +56,7 @@ aside {
     align-content: center;
 
     img {
-        margin: $very-large-padding $very-large-padding 0 $very-large-padding;
+        margin: $very-large-space $very-large-space 0 $very-large-space;
     }
 
     h1, h3 {
