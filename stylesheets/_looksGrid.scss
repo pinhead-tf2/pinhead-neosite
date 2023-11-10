@@ -86,9 +86,18 @@ body {
 
         .infocard__connections {
             list-style: none;
-            margin: $small-space $large-space 0 $large-space;
+            margin: $small-space $large-space 0 $very-large-space;
             padding: 0;
-            font-size: 16px;
+            font-size: 18px;
+
+            .connection_icon {
+                float: left;
+                text-align: center;
+                margin-top: 4px;  // i'm cheating icon placement
+                margin-left: -20px;
+                max-width: 20px;
+                max-height: 20px;
+            }
         }
     }
 

@@ -73,9 +73,17 @@ body .subtext {
 }
 .sidebar .sidebar__infocard .infocard__connections {
   list-style: none;
-  margin: 8px 20px 0 20px;
+  margin: 8px 20px 0 40px;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
+}
+.sidebar .sidebar__infocard .infocard__connections .connection_icon {
+  float: left;
+  text-align: center;
+  margin-top: 4px;
+  margin-left: -20px;
+  max-width: 20px;
+  max-height: 20px;
 }
 .sidebar .sidebar__navblock {
   display: flex;
