@@ -8,24 +8,14 @@ html, body {
 }
 
 body {
-  display: grid;
-  grid-template-areas: "menu main";
+  display: flex;
   background: #1e1e2e;
   color: #cdd6f4;
-}
-body .feather {
-  width: 24px;
-  height: 24px;
-  stroke: #9399b2;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
 }
 body a {
   color: #89b4fa;
 }
-body h1, body h2, body h3, body h4 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   margin: 0;
   font-weight: normal;
 }
@@ -43,10 +33,11 @@ body h4 {
 }
 
 .sidebar {
-  display: grid;
-  grid-area: menu;
-  margin: 40px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 40px 40px;
   width: 25%;
+  height: 100%;
 }
 .sidebar .sidebar__infocard {
   display: flex;
@@ -59,7 +50,6 @@ body h4 {
 .sidebar .sidebar__infocard #profile_picture {
   background: #f5e0dc;
   border-radius: 50%;
-  max-width: 100%;
   max-height: 100%;
   height: auto;
   margin: 20px 20px 0 20px;
@@ -83,7 +73,7 @@ body h4 {
 }
 .sidebar .sidebar__infocard .infocard__connections {
   list-style: none;
-  margin: 8px 20px 0 40px;
+  margin: 8px 20px 20px 40px;
   padding: 0;
   font-size: 18px;
 }
@@ -116,6 +106,7 @@ body h4 {
   align-items: center;
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 .sidebar .navblock__webring .webring__button {
   max-height: 60px;
@@ -138,8 +129,29 @@ body h4 {
 }
 
 .main {
-  display: grid;
-  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+}
+.main .main_card {
+  background: #313244;
+  border-radius: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.main .main_card .card_content {
+  margin: 8px 8px 8px 10px;
+}
+.main .main_card .card_content .card_subtitle {
+  color: #a6adc8;
+}
+.main .main_card .card_content .card_icon {
+  float: left;
+  max-width: 128px;
+  margin: 8px 10px 4px 0;
+  background: #f5e0dc;
+  border-radius: 16px;
 }
 
 :root {

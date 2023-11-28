@@ -11,14 +11,27 @@ html, body {
 }
 
 body {
+    display: grid;
+    grid-template-areas: 'sidebar main';
+    grid-template-columns: 1fr 3fr;
     background: $base;
     color: $text;
 
-    a {
-        color: $green;
+    .feather {
+        width: 24px;
+        height: 24px;
+        stroke: $overlay2;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
     }
 
-    h1, h2, h3 {
+    a {
+        color: $blue;
+    }
+
+    h1, h2, h3, h4 {
         margin: 0;
         font-weight: normal;
     }
@@ -34,41 +47,137 @@ body {
     h3 {
         font-size: 24px;
     }
+
+    h4 {
+        font-size: 20px
+    }
 }
 
-.flex {
-    display: flex;
-}
-
-aside {
-    background: $surface0;
-    margin: $very-large-space;
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    margin: $large-space 0 0 $very-large-space;
     width: 25%;
-    height: 100%;
-    border-radius: 16px;
-    -moz-border-radius: 16px;
-}
 
-.sidebar__identifier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    .sidebar__infocard {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background: $surface0;
+        border-radius: 16px;
+        margin-bottom: $large-space;
 
-    img {
-        margin: $very-large-space $very-large-space 0 $very-large-space;
+        #profile_picture {
+            background: $rosewater;
+            border-radius: 50%;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            margin: $large-space $large-space 0 $large-space;
+        }
+
+        h1, h3, h4 {
+            text-align: center;
+            margin: 0 $large-space 0 $large-space;
+        }
+
+        #username {
+            color: $sky;
+        }
+
+        #discordstatus {
+            margin-top: 2px;
+
+            a {
+                color: $text;
+                text-decoration: none;
+            }
+
+            #discordstatus__status {
+                color: $green;
+            }
+        }
+
+        .infocard__connections {
+            list-style: none;
+            margin: $small-space $large-space $large-space $very-large-space;
+            padding: 0;
+            font-size: 18px;
+
+            .small_subtext {
+                color: $subtext0;
+                font-size: 14px;
+            }
+
+            .connection_icon {
+                float: left;
+                text-align: center;
+                margin-top: 4px; // i'm cheating icon placement
+                margin-left: -20px;
+                max-width: 20px;
+                max-height: 20px;
+            }
+        }
     }
 
-    h1, h3 {
-        text-align: center;
+    .sidebar__navblock {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background: $surface0;
+        border-radius: 16px;
+        margin-bottom: $large-space;
     }
 
-    h1 {
-        color: $sky;
+    .navblock__pagelist {
+        list-style: "> ";
+    }
+
+    .navblock__webring {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: $large-space;
+
+        .webring__button {
+            max-height: 60px;
+            height: 100%;
+            width: 100%;
+            margin-bottom: $large-space;
+            margin-top: $large-space;
+        }
+
+        #webring_left {
+            margin-left: $large-space;
+            margin-right: $small-space;
+        }
+
+        #webring_right {
+            margin-left: $small-space;
+            margin-right: $large-space;
+        }
+
+        #webring_link {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
-#profile_picture {
-    border-radius: 50%;
-    background: $surface1;
+.main {
+    display: grid;
+    grid-area: main;
+    margin: $large-space;
+    width: 100%;
+
+    .content_block {
+        display: inline-block;
+        block-size: fit-content;
+        background: $surface0;
+        border-radius: 16px;
+        width: 100%;
+    }
 }
+

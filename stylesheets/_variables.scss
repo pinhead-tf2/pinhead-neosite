@@ -1,4 +1,16 @@
+@use "mocha";
+
+// spacing
 $very-large-space: 40px;
 $large-space: 20px;
 $medium-space: 10px;
 $small-space: 8px;
+$very-small-space: 4px;
+$main_content_space: 16px;
+
+// color declarations
+$body_background_color: mocha.$base;
+$text_color: mocha.$text;
+$subtext_color: mocha.$subtext0;
+$link_color: mocha.$blue;
+$image_background_color: mocha.$rosewater;
