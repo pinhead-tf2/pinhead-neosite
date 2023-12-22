@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>pinhead's site</title>
-    <link href="assets/profile_pictures/izumi.png" rel="icon" type="image/x-icon">
+    <link href="assets/images/izumi.png" rel="icon" type="image/x-icon">
     <!--Discord Rich Embed Data-->
     <meta content="pinhead.dev" property="og:site_name">
     <meta content="https://pinhead.dev" property="og:url">
@@ -17,7 +17,9 @@
     <link href="https://rsms.me/" rel="preconnect">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
     <!--Main stylesheet-->
-    <link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="assets/stylesheets/style.css" media="all" rel="stylesheet" type="text/css">
+    <!--Load scripts-->
+    <script defer src="assets/scripts/sidebar_inserts.js"></script>
 </head>
 <body>
 <!--Left side panel-->
@@ -25,9 +27,9 @@
     <div class="sidebar__infocard">
         <img alt="Profile picture depicting a blue humanoid slime" id="profile_picture"
              title="Mizu, the slime mage"
-             src="/assets/profile_pictures/mizu.png">
+             src="/assets/images/mizu.png">
         <h1 id="username">pinhead</h1>
-        <h3 id="username__subtitle">A random title goes here (js)</h3>
+        <h3 id="username__subtitle"><i>text</i></h3>
         <!--        This is staying as cut content until I get a backend that can communicate my status-->
         <!--        <h4 id="discordstatus">-->
         <!--            <a href="https://discord.gg/uC5mqgK597">-->
@@ -42,7 +44,7 @@
                     <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
                 </svg>
                 <span>September 13th</span>
-                <span class="small_subtext" title="September 13, 2004">19 years old (js)</span>
+                <span class="small_subtext" id="birthday__subtext" title="September 13, 2004">age (js)</span>
             </li>
             <li>
                 <svg class="connection_icon" fill="#a6adc8" height="16" viewBox="0 0 16 16" width="16"
@@ -50,7 +52,7 @@
                     <path d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"></path>
                 </svg>
                 <span>Minnesota, USA</span>
-                <span class="small_subtext" title="UTC−06:00">12:00AM (js)</span>
+                <span class="small_subtext" id="time__subtext" title="UTC−06:00">localtime (js)</span>
             </li>
             <li>
                 <svg class="connection_icon" fill="#a6adc8" height="16" viewBox="0 0 16 16" width="16"
@@ -104,7 +106,7 @@
 <main class="main">
     <div class="main_card">
         <div class="card_content">
-            <img src="assets/profile_pictures/izumi.png" alt="A picture of a slimy mage's hat, with a smile on it"
+            <img src="assets/images/izumi.png" alt="A picture of a slimy mage's hat, with a smile on it"
                  class="card_icon">
             <h2>demonstration title</h2>
             <h4 class="card_subtitle"><i>subtitle</i></h4>
@@ -113,6 +115,8 @@
     </div>
     <div class="main_card">
         <div class="card_content">
+            <img src="assets/images/izumi.png" alt="A picture of a slimy mage's hat, with a smile on it"
+                 class="card_icon">
             <h2>demonstration title</h2>
             <span>this is a lot of characters in a single sentence</span>
         </div>

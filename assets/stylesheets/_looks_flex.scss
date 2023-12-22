@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: $large-space 0 $very-large-space $very-large-space;
-    width: 25%;
+    width: 20%;
     height: 100%;
 
     .sidebar__infocard {
@@ -167,7 +167,7 @@ body {
         margin-bottom: $main_content_space;
 
         .card_content {
-            margin: $small-space $small-space $small-space $medium-space;
+            margin: $small-space;
 
             .card_subtitle {
                 color: $subtext0;
@@ -176,7 +176,7 @@ body {
             .card_icon {
                 float: left;
                 max-width: 128px;
-                margin: $small-space $medium-space $very-small-space 0;
+                margin: 0 $medium-space $small-space 0;
                 background: $rosewater;
                 border-radius: 16px;
             }
