@@ -19,7 +19,8 @@ async function main() {
     const minnesota_time = new Date(await get_local_time()).toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: 'numeric',
-        hour12: true
+        hour12: true,
+        timeZone: "America/Chicago"
     })
     const time_subtext = document.getElementById("time__subtext")
     time_subtext.innerHTML = minnesota_time;
