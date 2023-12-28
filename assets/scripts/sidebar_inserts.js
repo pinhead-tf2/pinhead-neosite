@@ -52,6 +52,6 @@ function random_title() {
 
 const page_load_promise = on_page_load();
 title_header.addEventListener("click", () => {
-    random_title();
     title_clicks++;
+    random_title();
 });
