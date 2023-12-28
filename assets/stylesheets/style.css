@@ -98,7 +98,16 @@ body h4 {
   margin-bottom: 20px;
 }
 .sidebar .navblock__pagelist {
-  list-style: "> ";
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 20px;
+}
+.sidebar .navblock__line {
+  background-color: #6c7086;
+  border: none;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0 20px 0;
 }
 .sidebar .navblock__webring {
   display: flex;
@@ -109,17 +118,22 @@ body h4 {
   margin-bottom: 20px;
 }
 .sidebar .navblock__webring .webring__button {
+  font-size: 1vw;
   max-height: 60px;
   height: 100%;
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: none;
 }
 .sidebar .navblock__webring #webring_left {
+  background-color: #cba6f7;
   margin-left: 20px;
   margin-right: 8px;
 }
 .sidebar .navblock__webring #webring_right {
+  background-color: #89b4fa;
   margin-left: 8px;
   margin-right: 20px;
 }
