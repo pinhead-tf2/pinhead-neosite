@@ -2,6 +2,7 @@ const random_titles = ["local gay person", "resident tf2 player", "dragon lover"
     "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan"];
 const birthday_string = "September 13, 2004, 12:00:00";
 const title_header = document.getElementById("username__subtitle");
+let title_clicks = 0;
 
 async function on_page_load() {
     /**
@@ -38,18 +39,19 @@ function random_title() {
      */
     const random = Math.floor(Math.random() * random_titles.length);
     title_header.innerHTML = random_titles[random];
-    title_header.title = "a randomly cycled title (click to change)";
+    title_header.title = `a randomly cycled title (click to change) | clicks: ${title_clicks}`;
 
     // the funny 1/100 chance for it to just say faggot
     // why? because i thought it was funny (it is)
     const secret_random = Math.random();
     if (secret_random >= 0.99) {
         title_header.innerHTML = "faggot";
-        title_header.title = "you rolled the 1/100 chance for it to say faggot, congration";
+        title_header.title = `you rolled the 1/100 chance for it to say faggot, congration | clicks: ${title_clicks}`;
     }
 }
 
 const page_load_promise = on_page_load();
 title_header.addEventListener("click", () => {
     random_title();
+    title_clicks++;
 });
