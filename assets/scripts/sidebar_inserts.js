@@ -38,6 +38,10 @@ function random_title() {
      * Inserts a title at random from the random_titles array, into the sidebar subtitle
      */
     const random = Math.floor(Math.random() * random_titles.length);
+    // prevents duplicates
+    if (title_header.innerHTML === random_titles[random]) {
+        return random_title();
+    }
     title_header.innerHTML = random_titles[random];
     title_header.title = `a randomly cycled title (click to change) | clicks: ${title_clicks}`;
 
