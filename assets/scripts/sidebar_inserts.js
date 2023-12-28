@@ -1,12 +1,18 @@
-async function main() {
+const random_titles = ["local gay person", "resident tf2 player", "dragon lover", "passionate about python",
+    "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan"];
+const birthday_string = "September 13, 2004, 12:00:00";
+const title_header = document.getElementById("username__subtitle");
+
+async function on_page_load() {
+    /**
+     * Main function handling all things on page load
+     */
     // inserting random titles in the sidebar
-    const random_titles = ["local gayass", "resident tf2 player", "dragon lover", "passionate about python", "average comp networking student"]
-    const title_header = document.getElementById("username__subtitle");
-    title_header.innerHTML = random_titles[random_titles.length * Math.random() | 0];
+    random_title();
 
     // calculating current age
     const current_time = Date.now()
-    const age = new Date(current_time - new Date("September 13, 2004, 12:00:00")).getFullYear() - 1970;
+    const age = new Date(current_time - new Date(birthday_string)).getFullYear() - 1970;
     const birthday_subtext = document.getElementById("birthday__subtext")
     birthday_subtext.innerHTML = `${age} years old`;
 
@@ -26,4 +32,24 @@ async function main() {
     time_subtext.innerHTML = minnesota_time;
 }
 
-const promise = main();
+function random_title() {
+    /**
+     * Inserts a title at random from the random_titles array, into the sidebar subtitle
+     */
+    const random = Math.floor(Math.random() * random_titles.length);
+    title_header.innerHTML = random_titles[random];
+    title_header.title = "a randomly cycled title (click to change)";
+
+    // the funny 1/100 chance for it to just say faggot
+    // why? because i thought it was funny (it is)
+    const secret_random = Math.random();
+    if (secret_random >= 0.99) {
+        title_header.innerHTML = "faggot";
+        title_header.title = "you rolled the 1/100 chance for it to say faggot, congration";
+    }
+}
+
+const page_load_promise = on_page_load();
+title_header.addEventListener("click", () => {
+    random_title();
+});

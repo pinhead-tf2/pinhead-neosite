@@ -73,6 +73,11 @@ body {
             color: $sky;
         }
 
+        #username__subtitle {
+            cursor: pointer;
+            user-select: none;
+        }
+
         #discordstatus {
             margin-top: 2px;
 
@@ -149,6 +154,7 @@ body {
             margin-bottom: $medium-space;
             margin-top: $medium-space;
             border: none;
+            color: $mantle;
         }
 
         #webring_left {
