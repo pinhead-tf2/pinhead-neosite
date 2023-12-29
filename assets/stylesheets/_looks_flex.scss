@@ -125,7 +125,17 @@ body {
     .navblock__pagelist {
         list-style: none;
         padding: 0;
-        margin: $large-space 0 0 $large-space;
+        margin: $large-space 0 0 0;
+
+        li {
+            padding: 2px 0 2px $large-space;
+            border-left: 2px solid transparent;
+        }
+
+        li:hover {
+            border-left-color: $overlay2;
+            background-color: $surface1;
+        }
     }
 
     .navblock__line {
