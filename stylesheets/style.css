@@ -1,3 +1,4 @@
+/*Imports*/
 /*Catppuccin Mocha Green*/
 /*Start: #090979 | End: #00D4FF | Generator: https://www.learnui.design/tools/gradient-generator.html*/
 /*Start: #d60270 | Middle: #0038a8 | End: #009ee7 | Generator: https://cssgradient.io*/
@@ -7,6 +8,7 @@
 /*Start: #d60270 | End: #4c0094 | Generator: https://cssgradient.io*/
 /*Start: #d60270 | Middle 71: #6a008c | End: #4c0094 | Generator: https://cssgradient.io*/
 /*--header--background--gradient: linear-gradient(25deg, rgba(214,2,112,1) 0%, rgba(106,0,140,1) 71%, rgba(76,0,148,1) 100%);*/
+/*Imports*/
 .wrapper__title,
 .sidebar__title, .header {
   border: 3px solid rgb(48, 52, 70);
@@ -192,6 +194,5 @@ footer {
     font-family: "Inter var", sans-serif;
   }
 }
-/*Imports*/
 
 /*# sourceMappingURL=style.css.map */
