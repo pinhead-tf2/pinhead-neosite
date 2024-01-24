@@ -43,6 +43,7 @@ body {
 
 .sidebar {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: $large-space 0 $very-large-space $very-large-space;
     width: 20%;
@@ -203,18 +204,29 @@ body {
         .card_content {
             margin: $small-space;
 
+            hr {
+                margin: $very-small-space 0;
+                border-color: $overlay2;
+            }
+
             .card_subtitle {
                 color: $subtext0;
             }
 
-            .card_icon {
+            img {
                 float: left;
-                max-width: 128px;
                 margin: 0 $medium-space $small-space 0;
                 background: $rosewater;
                 border-radius: 16px;
+            }
+
+            .card_icon {
+                max-width: 128px;
             }
         }
     }
 }
 
+@media only screen and (max-width: 640px) {
+    
+}

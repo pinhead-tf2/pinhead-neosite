@@ -2,12 +2,14 @@ const random_titles = ["local gay person", "resident tf2 player", "dragon lover"
     "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan"];
 const birthday_string = "September 13, 2004, 12:00:00";
 const title_header = document.getElementById("username__subtitle");
+const time_subtext = document.getElementById("time__subtext")
 let title_clicks = 0;
 
 async function on_page_load() {
     /**
      * Main function handling all things on page load
      */
+
     // inserting random titles in the sidebar
     random_title();
 
@@ -17,20 +19,21 @@ async function on_page_load() {
     const birthday_subtext = document.getElementById("birthday__subtext")
     birthday_subtext.innerHTML = `${age} years old`;
 
-    // get time of cst
-    const get_local_time = async () => {
-        const response = await fetch("https://worldtimeapi.org/api/timezone/America/Chicago");
-        const json_data = await response.json()
-        return json_data["datetime"]
-    }
-    const minnesota_time = new Date(await get_local_time()).toLocaleTimeString('en-US', {
+    // localtime
+    await set_clock()
+    setInterval(set_clock, 1000)
+}
+
+async function set_clock() {
+    // making a new Date object every time seems wrong, but then again, js as a whole is horrible imo
+    // REVIEW THIS CODE WHEN DST IS ACTIVE
+    // also attempt to see what happens when a non-dst recognizing location opens the site
+    time_subtext.innerHTML = new Date().toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: 'numeric',
         hour12: true,
         timeZone: "America/Chicago"
     })
-    const time_subtext = document.getElementById("time__subtext")
-    time_subtext.innerHTML = minnesota_time;
 }
 
 function random_title() {
