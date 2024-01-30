@@ -1,3 +1,29 @@
+.sidebar .navblock__webring, body, .main, .sidebar, .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
+  display: flex;
+}
+
+.main, .sidebar, .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
+  flex-direction: column;
+}
+
+.sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
+  align-content: center;
+}
+
+.main .main_card, .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
+  background: hsla(237, 16%, 23%, 0.75);
+  border-radius: 16px;
+  width: 100%;
+}
+
+.sidebar .sidebar__infocard {
+  backdrop-filter: blur(4px);
+}
+
+.sidebar .navblock__webring, .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
+  margin-bottom: 20px;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -8,8 +34,7 @@ html, body {
 }
 
 body {
-  display: flex;
-  background: #1e1e2e;
+  background: #1e1e2e url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsl(240, 21%, 15%)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='2' stroke='hsla(217, 92%, 76%, 0.15)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>") repeat;
   color: #cdd6f4;
 }
 body a {
@@ -33,19 +58,9 @@ body h4 {
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
   margin: 20px 0 40px 40px;
   width: 20%;
   height: 100%;
-}
-.sidebar .sidebar__infocard {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background: #313244;
-  border-radius: 16px;
-  margin-bottom: 20px;
 }
 .sidebar .sidebar__infocard #profile_picture {
   background: #f5e0dc;
@@ -93,14 +108,6 @@ body h4 {
   max-width: 20px;
   max-height: 20px;
 }
-.sidebar .sidebar__navblock {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background: #313244;
-  border-radius: 16px;
-  margin-bottom: 20px;
-}
 .sidebar .navblock__pagelist {
   list-style: none;
   padding: 0;
@@ -117,17 +124,13 @@ body h4 {
 .sidebar .navblock__line {
   background-color: #6c7086;
   border: none;
-  width: 100%;
   height: 2px;
   margin: 20px 0 20px 0;
 }
 .sidebar .navblock__webring {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 .sidebar .navblock__webring .webring__button {
   font-size: 1vw;
@@ -158,31 +161,37 @@ body h4 {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
   margin: 20px;
   width: 100%;
 }
 .main .main_card {
-  background: #313244;
-  border-radius: 16px;
-  width: 100%;
   margin-bottom: 16px;
 }
 .main .main_card .card_content {
   margin: 8px;
 }
+.main .main_card .card_content hr {
+  margin: 4px 0;
+  border-color: #9399b2;
+}
 .main .main_card .card_content .card_subtitle {
   color: #a6adc8;
 }
-.main .main_card .card_content .card_icon {
+.main .main_card .card_content img {
   float: left;
-  max-width: 128px;
   margin: 0 10px 8px 0;
   background: #f5e0dc;
   border-radius: 16px;
 }
+.main .main_card .card_content .card_icon {
+  max-width: 128px;
+}
 
+@media only screen and (max-width: 640px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 :root {
   font-family: "Inter", sans-serif;
 }
