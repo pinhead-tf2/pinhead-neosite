@@ -76,10 +76,9 @@ body h4 {
 }
 
 .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
-  background: #313244;
+  background: hsla(237, 16%, 23%, 0.75);
   border-radius: 16px;
   width: 100%;
-  opacity: 0.75;
 }
 
 .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
@@ -202,10 +201,9 @@ body h4 {
 }
 
 .main .main_card {
-  background: #313244;
+  background: hsla(237, 16%, 23%, 0.75);
   border-radius: 16px;
   width: 100%;
-  opacity: 0.75;
 }
 
 .main .main_card {

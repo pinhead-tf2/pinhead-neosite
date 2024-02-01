@@ -14,7 +14,7 @@ $text_color: mocha.$text;
 $subtext_color: mocha.$subtext0;
 $link_color: mocha.$blue;
 $image_background_color: mocha.$rosewater;
-$panel-background: mocha.$surface0;  // alpha of 0-1 is infinitely easier than 00-ff
+$panel-background: hsla(237, 16%, 23%, 0.75);  // have to use HSLA to blur the panels
 $grid-lines: hsla(206.6, 89.7%, 54.1%, 1);
 
 // other
