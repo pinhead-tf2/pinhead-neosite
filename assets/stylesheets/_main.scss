@@ -1,0 +1,38 @@
+@import "mocha";
+@import "functions";
+@import "variables";
+
+.main {
+    @extend %flex-column;
+    margin: $large-space;
+    width: 100%;
+
+    .main_card {
+        @extend %panel, %background-blur;
+        margin-bottom: $main_content_space;
+
+        .card_content {
+            margin: $small-space;
+
+            hr {
+                margin: $very-small-space 0;
+                border-color: $overlay2;
+            }
+
+            .card_subtitle {
+                color: $subtext0;
+            }
+
+            img {
+                float: left;
+                margin: 0 $medium-space $small-space 0;
+                background: $rosewater;
+                border-radius: 16px;
+            }
+
+            .card_icon {
+                max-width: 128px;
+            }
+        }
+    }
+}

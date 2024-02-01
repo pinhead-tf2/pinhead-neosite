@@ -1,0 +1,8 @@
+@import "functions";
+@import "variables";
+
+@media only screen and (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+    }
+}

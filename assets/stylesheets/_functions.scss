@@ -1,0 +1,31 @@
+@import "mocha";
+@import "variables";
+
+%flex {
+    display: flex;
+}
+
+%flex-column {
+    @extend %flex;
+    flex-direction: column;
+}
+
+%vertical-alignment {
+    @extend %flex-column;
+    align-content: center;
+}
+
+%panel {
+    background: $panel-background;
+    border-radius: 16px;
+    width: 100%;
+    opacity: 0.75;
+}
+
+%background-blur {
+    backdrop-filter: blur(4px);
+}
+
+%margin-bottom-large {
+    margin-bottom: $large-space;
+}
