@@ -2,3 +2,36 @@
 @import "functions";
 @import "variables";
 
+header {
+    @extend %flex;
+    flex-wrap: wrap;
+    background: $surface1;
+    align-content: center;
+    position: absolute;
+    max-width: 100vw;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+    a, h3, nav, img {
+        align-self: center;
+    }
+
+    #site_logo {
+        display: inline-block;
+    }
+
+    .header_icon {
+        max-height: 32px;
+    }
+
+    .settings_icon {
+        margin: $small-space $very-small-space $small-space auto;
+        max-height: 32px;
+    }
+
+    #settings_icon_path {
+        stroke: $text;
+        fill: $text;
+    }
+}

@@ -4,7 +4,7 @@
 
 .main {
     @extend %flex-column;
-    margin: $large-space;
+    margin-left: $large-space;
     width: 100%;
 
     .main_card {

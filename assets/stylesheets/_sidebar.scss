@@ -4,7 +4,6 @@
 
 .sidebar {
     @extend %flex-column;
-    margin: $large-space 0 $very-large-space $very-large-space;
     width: 20%;
     height: 100%;
 

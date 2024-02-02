@@ -7,14 +7,14 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    box-sizing: content-box;
-    overflow: auto;
+    overflow: scroll;
 }
 
 body {
     @extend %flex;
     background: $body_background_color;
     color: $text_color;
+    flex-direction: column;
 
     a {
         color: $link_color;
@@ -43,7 +43,7 @@ body {
 }
 
 .animated_background {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -61,4 +61,11 @@ body {
     to {
         background-position: -100px 100px;
     }
+}
+
+.screen {
+    @extend %flex;
+    margin: $large-space $very-large-space 0 $very-large-space;
+    position: relative;
+    top: 48px;
 }

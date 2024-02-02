@@ -7,7 +7,7 @@
     font-family: "Inter var", sans-serif;
   }
 }
-body {
+.screen, body {
   display: flex;
 }
 
@@ -16,13 +16,13 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  box-sizing: content-box;
-  overflow: auto;
+  overflow: scroll;
 }
 
 body {
   background: #1e1e2e;
   color: #cdd6f4;
+  flex-direction: column;
 }
 body a {
   color: #89b4fa;
@@ -45,7 +45,7 @@ body h4 {
 }
 
 .animated_background {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -63,6 +63,44 @@ body h4 {
     background-position: -100px 100px;
   }
 }
+.screen {
+  margin: 20px 40px 0 40px;
+  position: relative;
+  top: 48px;
+}
+
+header {
+  display: flex;
+}
+
+header {
+  flex-wrap: wrap;
+  background: #45475a;
+  align-content: center;
+  position: absolute;
+  max-width: 100vw;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+header a, header h3, header nav, header img {
+  align-self: center;
+}
+header #site_logo {
+  display: inline-block;
+}
+header .header_icon {
+  max-height: 32px;
+}
+header .settings_icon {
+  margin: 8px 4px 8px auto;
+  max-height: 32px;
+}
+header #settings_icon_path {
+  stroke: #cdd6f4;
+  fill: #cdd6f4;
+}
+
 .sidebar .sidebar__navblock .navblock__webring, .sidebar, .sidebar .sidebar__navblock, .sidebar .sidebar__infocard {
   display: flex;
 }
@@ -90,7 +128,6 @@ body h4 {
 }
 
 .sidebar {
-  margin: 20px 0 40px 40px;
   width: 20%;
   height: 100%;
 }
@@ -211,7 +248,7 @@ body h4 {
 }
 
 .main {
-  margin: 20px;
+  margin-left: 20px;
   width: 100%;
 }
 .main .main_card {
