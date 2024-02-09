@@ -13,16 +13,20 @@ header {
     top: 0;
     z-index: 10;
 
-    a, h3, nav, img {
-        align-self: center;
+    a, h3, img, svg {
+        @extend %self-alignment;
     }
 
     #site_logo {
-        display: inline-block;
+        margin-left: $small-space;
+    }
+
+    #site_header {
+        margin: 0 $small-space;
     }
 
     .header_icon {
-        max-height: 32px;
+        max-width: 64px;
     }
 
     .settings_icon {
@@ -33,5 +37,73 @@ header {
     #settings_icon_path {
         stroke: $text;
         fill: $text;
+    }
+}
+
+.dropdown {
+    @extend %self-alignment;
+    padding: 0 $small-space;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+    p {
+        font-size: 18px;
+        margin: 14px 0;
+    }
+}
+
+.dropdown:hover {
+    background-color: $surface2;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    left: 0;
+    background-color: $surface1;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        border-left: 2px solid transparent;
+        padding: 2px $small-space;
+        display: block;
+    }
+
+    li:hover {
+        border-left-color: $subtext0;
+        background-color: $surface2;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        color: inherit;
+    }
+
+    .has_nested {
+        border-left: 0;
+    }
+
+    .nested {
+        border-left-color: $overlay0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .selected {
+        color: $green;
+        border-left-color: $green;
     }
 }
