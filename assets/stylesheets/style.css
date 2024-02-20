@@ -116,7 +116,7 @@ header #settings_icon_path {
   margin: 14px 0;
 }
 
-.dropdown_hoverable:hover .dropdown_hoverable_flex:hover .dropdown:hover {
+.dropdown:hover {
   background-color: #45475a;
 }
 
