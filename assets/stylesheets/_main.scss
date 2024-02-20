@@ -24,14 +24,19 @@
             }
 
             img {
+                @extend %rounded-border;
+                max-width: 100%;
                 float: left;
                 margin: 0 $medium-space $small-space 0;
                 background: $rosewater;
-                border-radius: 16px;
             }
 
             .card_icon {
                 max-width: 128px;
+            }
+
+            p {
+                margin: 0;
             }
         }
     }

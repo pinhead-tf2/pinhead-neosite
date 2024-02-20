@@ -5,7 +5,7 @@
 header {
     @extend %flex;
     flex-wrap: wrap;
-    background: $surface1;
+    background: $surface0;
     align-content: center;
     position: absolute;
     max-width: 100vw;
@@ -13,7 +13,7 @@ header {
     top: 0;
     z-index: 10;
 
-    a, h3, img, svg {
+    a, h3, #site_logo_image, svg {
         @extend %self-alignment;
     }
 
@@ -53,12 +53,16 @@ header {
     }
 }
 
-.dropdown:hover {
-    background-color: $surface2;
+.dropdown_hoverable:hover .dropdown_hoverable_flex:hover .dropdown:hover {
+    background-color: $surface1;
 }
 
-.dropdown:hover .dropdown_content {
+.dropdown_hoverable:hover .dropdown_content {
     display: block;
+}
+
+.dropdown_hoverable_flex:hover .dropdown_content {
+    display: flex;
 }
 
 .dropdown_content {
@@ -68,6 +72,7 @@ header {
     left: 0;
     background-color: $surface1;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
     ul {
         margin: 0;
@@ -88,8 +93,8 @@ header {
 
     a {
         text-decoration: none;
-        font-size: 16px;
         color: inherit;
+        font-size: 16px;
     }
 
     .has_nested {
@@ -105,5 +110,84 @@ header {
     .selected {
         color: $green;
         border-left-color: $green;
+    }
+}
+
+.dropdown_webring {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: $surface1;
+
+    .webring_page {
+        //@extend %flex;
+        min-height: 32px;
+        height: 100%;
+        transition: all .2s ease-in-out;
+        box-sizing: border-box;
+        background-color: $surface0;
+        background-size: cover;
+
+        a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            padding: $small-space;
+            font-size: 1vw;
+            color: $text;
+        }
+    }
+
+    .webring_page:hover {
+        transform: scale(1.1);
+    }
+
+    #webring_left {
+        margin-right: $small-space;
+        background-color: $mauve;
+
+        a {
+            color: $surface0;
+        }
+    }
+
+    #webring_right {
+        margin-left: $small-space;
+        background-color: $sapphire;
+
+        a {
+            color: $surface0;
+        }
+    }
+
+    //image background webring panels, this needs transparency to work properly
+    //#webring_left {
+    //    border: 4px solid $mauve;
+    //    margin-right: $small-space;
+    //    background: $surface0 url("../images/timayo.png") no-repeat;
+    //    background-size: cover;
+    //    background-position-y: 50%;
+    //}
+
+    //#webring_right {
+    //    border: 4px solid $sapphire;
+    //    margin-left: $small-space;
+    //    background: $surface0 url("../images/11pixels.png") no-repeat;
+    //    background-size: cover;
+    //    background-position-y: 50%;
+    //}
+
+    #webring_link {
+        width: 100%;
+        text-align: center;
+        margin: $very-small-space 0;
+        text-decoration: underline;
+        color: $link_color;
+    }
+
+    .webring_background_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 }

@@ -2,6 +2,14 @@
 @import "variables";
 
 @media only screen and (max-width: 640px) {
+    .screen {
+        flex-direction: column;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
     .sidebar {
         width: 100%;
     }

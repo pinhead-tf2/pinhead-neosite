@@ -1,8 +1,8 @@
 const random_titles = ["local gay person", "resident tf2 player", "dragon lover", "passionate about python",
     "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan"];
 const birthday_string = "September 13, 2004, 12:00:00";
-const title_header = document.getElementById("username__subtitle");
-const time_subtext = document.getElementById("time__subtext")
+const title_header = document.getElementById("username_subtitle");
+const time_subtext = document.getElementById("time_subtext")
 let title_clicks = 0;
 
 async function on_page_load() {
@@ -16,7 +16,7 @@ async function on_page_load() {
     // calculating current age
     const current_time = Date.now()
     const age = new Date(current_time - new Date(birthday_string)).getFullYear() - 1970;
-    const birthday_subtext = document.getElementById("birthday__subtext")
+    const birthday_subtext = document.getElementById("birthday_subtext")
     birthday_subtext.innerHTML = `${age} years old`;
 
     // localtime

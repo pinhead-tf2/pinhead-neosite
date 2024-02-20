@@ -15,9 +15,13 @@
     align-content: center;
 }
 
-%panel {
-    background: $panel-background;
+%rounded-border {
     border-radius: 16px;
+}
+
+%panel {
+    @extend %rounded-border;
+    background: $panel-background;
     width: 100%;
 }
 
