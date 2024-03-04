@@ -49,7 +49,7 @@ body {
     height: 100vh;
     z-index: -1;
     background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 25 0 L 25 50 M 0 25 L 50 25" stroke="' + $grid-line-colors + '" stroke-width="' + $grid-line-width + '" fill="none"/%3E%3C/svg%3E');
-    animation: diagonally_scrolling_grid 5s linear infinite;
+    animation: diagonally_scrolling_grid 2500ms linear infinite;
     opacity: 0.5;
 }
 
@@ -58,7 +58,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: -100px 100px;
+        background-position: -50px 50px;
     }
 }
 

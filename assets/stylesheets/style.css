@@ -51,7 +51,7 @@ body h4 {
   height: 100vh;
   z-index: -1;
   background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 25 0 L 25 50 M 0 25 L 50 25" stroke="hsl(206.6, 89.7%, 54.1%)" stroke-width="4px" fill="none"/%3E%3C/svg%3E');
-  animation: diagonally_scrolling_grid 5s linear infinite;
+  animation: diagonally_scrolling_grid 2500ms linear infinite;
   opacity: 0.5;
 }
 
@@ -60,7 +60,7 @@ body h4 {
     background-position: 0 0;
   }
   to {
-    background-position: -100px 100px;
+    background-position: -50px 50px;
   }
 }
 .screen {
@@ -69,11 +69,11 @@ body h4 {
   top: 48px;
 }
 
-header {
+header #settings_icon, header {
   display: flex;
 }
 
-.dropdown, header a, header h3, header #site_logo_image, header svg {
+header #settings_icon, header a, header h3, header #site_logo_image, header svg {
   align-self: center;
 }
 
@@ -96,13 +96,19 @@ header #site_header {
 header .header_icon {
   max-width: 64px;
 }
-header .settings_icon {
-  margin: 8px 4px 8px auto;
+header #settings_icon {
   max-height: 32px;
+}
+header #settings_dropdown_padding {
+  margin-left: auto;
 }
 header #settings_icon_path {
   stroke: #cdd6f4;
   fill: #cdd6f4;
+}
+
+.dropdown {
+  align-self: center;
 }
 
 .dropdown {
@@ -135,7 +141,7 @@ header #settings_icon_path {
   left: 0;
   background-color: #45475a;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 0 4px 4px 4px;
 }
 .dropdown_content ul {
   margin: 0;
@@ -188,7 +194,7 @@ header #settings_icon_path {
   height: 100%;
   width: 100%;
   padding: 8px;
-  font-size: 1vw;
+  font-size: 16px;
   color: #cdd6f4;
 }
 .dropdown_webring .webring_page:hover {
