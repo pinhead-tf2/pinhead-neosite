@@ -13,4 +13,14 @@
     .sidebar {
         width: 100%;
     }
+
+    .dropdown_content {
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .dropdown_content {
+        left: 0;
+    }
 }

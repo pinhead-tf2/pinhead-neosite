@@ -29,9 +29,9 @@
 
 .dropdown_content {
     display: none;
+    //display: flex;
     position: absolute;
     width: max-content;
-    left: 0;
     background-color: $surface1;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 0 4px 4px 4px;
@@ -82,7 +82,8 @@
     background-color: $surface1;
 
     .webring_page {
-        min-height: 32px;
+        display: flex;
+        min-height: 48px;
         height: 100%;
         transition: all .2s ease-in-out;
         box-sizing: border-box;
