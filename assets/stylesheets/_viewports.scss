@@ -15,12 +15,25 @@
     }
 
     .dropdown_content {
-        right: 0;
+        left: 0;
+    }
+
+    .dropdown_webring {
+        left: -66px;
+    }
+
+    #site_header {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 800px) {
     .dropdown_content {
         left: 0;
+        transition: 0s 0.5s;
+    }
+
+    .dropdown_hoverable:hover .dropdown_content {
+        transition-delay: 0s;
     }
 }

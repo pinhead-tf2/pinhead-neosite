@@ -20,16 +20,12 @@
 }
 
 .dropdown_hoverable:hover .dropdown_content {
-    display: block;
-}
-
-.dropdown_hoverable_flex:hover .dropdown_content {
-    display: flex;
+    visibility: visible;
 }
 
 .dropdown_content {
-    display: none;
-    //display: flex;
+    display: flex;
+    visibility: hidden;
     position: absolute;
     width: max-content;
     background-color: $surface1;
