@@ -257,12 +257,17 @@ header #settings_icon_path {
   width: 20%;
   height: 100%;
 }
+.sidebar .sidebar_infocard #sidebar_picture_container {
+  margin: 20px 20px 0 20px;
+}
 .sidebar .sidebar_infocard #profile_picture {
   background: #f5e0dc;
   border-radius: 50%;
-  max-height: 384px;
-  height: auto;
   margin: 20px 20px 0 20px;
+  display: block;
+  max-width: 384px;
+  height: auto;
+  width: auto;
 }
 .sidebar .sidebar_infocard h1, .sidebar .sidebar_infocard h3, .sidebar .sidebar_infocard h4 {
   text-align: center;
@@ -427,7 +432,7 @@ header #settings_icon_path {
     display: none;
   }
   #profile_picture {
-    max-height: 200px;
+    max-width: 200px;
   }
 }
 @media only screen and (min-width: 800px) {

@@ -10,12 +10,19 @@
     .sidebar_infocard {
         @extend %panel, %vertical-alignment, %background-blur, %margin-bottom-large;
 
+        #sidebar_picture_container {
+            margin: $large-space $large-space 0 $large-space;
+        }
+
         #profile_picture {
             background: $rosewater;
             border-radius: 50%;
-            max-height: 384px;
-            height: auto;
             margin: $large-space $large-space 0 $large-space;
+
+            display: block;
+            max-width: 384px;
+            height: auto;
+            width: auto;
         }
 
         h1, h3, h4 {
