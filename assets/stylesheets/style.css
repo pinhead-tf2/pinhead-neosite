@@ -127,12 +127,11 @@ header #settings_icon_path {
 }
 
 .dropdown_hoverable:hover .dropdown_content {
-  visibility: visible;
+  display: flex;
 }
 
 .dropdown_content {
-  display: flex;
-  visibility: hidden;
+  display: none;
   position: absolute;
   width: max-content;
   background-color: #45475a;
@@ -437,10 +436,13 @@ header #settings_icon_path {
 }
 @media only screen and (min-width: 800px) {
   .dropdown_content {
+    display: flex;
+    visibility: hidden;
     left: 0;
     transition: 0s 0.5s;
   }
   .dropdown_hoverable:hover .dropdown_content {
+    visibility: visible;
     transition-delay: 0s;
   }
 }

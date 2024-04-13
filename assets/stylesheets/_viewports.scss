@@ -34,11 +34,14 @@
 
 @media only screen and (min-width: 800px) {
     .dropdown_content {
+        display: flex;
+        visibility: hidden;
         left: 0;
         transition: 0s 0.5s;
     }
 
     .dropdown_hoverable:hover .dropdown_content {
+        visibility: visible;
         transition-delay: 0s;
     }
 }
