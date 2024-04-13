@@ -245,6 +245,7 @@ header #settings_icon_path {
 }
 
 .sidebar .sidebar_navblock, .sidebar .sidebar_infocard {
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 
@@ -377,6 +378,7 @@ header #settings_icon_path {
 }
 
 .main .main_card {
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 

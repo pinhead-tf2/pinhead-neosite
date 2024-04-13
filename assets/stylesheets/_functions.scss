@@ -26,6 +26,7 @@
 }
 
 %background-blur {
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
