@@ -9,7 +9,7 @@
 
     .main_card {
         @extend %panel, %background-blur;
-        margin-bottom: $main_content_space;
+        margin-bottom: $main-content-space;
 
         .card_content {
             margin: $small-space;

@@ -1,12 +1,21 @@
 @use "mocha";
 
+// font sizing
+$header1-size: 48px;
+$header2-size: 32px;
+$header3-size: 24px;
+$header4-size: 20px;
+$larger-text: 18px;
+$normal-text: 16px;
+$smaller-text: 14px;
+
 // spacing
 $very-large-space: 40px;
 $large-space: 20px;
 $medium-space: 10px;
 $small-space: 8px;
 $very-small-space: 4px;
-$main_content_space: 16px;
+$main-content-space: 16px;
 
 // color declarations
 $body_background_color: mocha.$base;

@@ -26,19 +26,19 @@ body {
     }
 
     h1 {
-        font-size: 48px;
+        font-size: $header1-size;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: $header2-size;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: $header3-size;
     }
 
     h4 {
-        font-size: 20px
+        font-size: $header4-size;
     }
 }
 

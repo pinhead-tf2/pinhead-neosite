@@ -13,7 +13,7 @@
         #profile_picture {
             background: $rosewater;
             border-radius: 50%;
-            max-height: 100%;
+            max-height: 384px;
             height: auto;
             margin: $large-space $large-space 0 $large-space;
         }
@@ -49,11 +49,11 @@
             list-style: none;
             margin: $small-space $large-space $large-space $very-large-space;
             padding: 0;
-            font-size: 18px;
+            font-size: $larger-text;
 
             .small_subtext {
                 color: $subtext0;
-                font-size: 14px;
+                font-size: $smaller-text;
             }
 
             .connection_icon {

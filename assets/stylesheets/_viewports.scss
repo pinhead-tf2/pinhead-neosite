@@ -4,6 +4,7 @@
 @media only screen and (max-width: 640px) {
     .screen {
         flex-direction: column;
+        margin: $medium-space $large-space 0 $large-space;
     }
 
     .main {
@@ -24,6 +25,10 @@
 
     #site_header {
         display: none;
+    }
+
+    #profile_picture {
+        max-height: 200px;
     }
 }
 
