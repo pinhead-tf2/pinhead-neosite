@@ -19,8 +19,10 @@ async function on_page_load() {
         pages_navigator.innerHTML = text;
     });
 
-    const current_url = document.URL
-    console.log(current_url)
+    const current_path = location.pathname
+    const parsed_path = current_path.split('/')
+    console.log(current_path)
+    console.log(parsed_path)
 }
 
 const header_page_load_promise = on_page_load();
