@@ -14,10 +14,22 @@ async function on_page_load() {
     random_title();
 
     // calculating current age
-    const current_time = Date.now()
-    const age = new Date(current_time - new Date(birthday_string)).getFullYear() - 1970;
+    const age = new Date(Date.now() - new Date(birthday_string)).getFullYear() - 1970;
     const birthday_subtext = document.getElementById("birthday_subtext")
     birthday_subtext.innerHTML = `${age} years old`;
+
+    const birthdate_text = document.getElementById('birthday_date')
+    const days_until_birthday = daysUntilNext(9, 13)
+
+
+    // extra birthday sillies
+    if (days_until_birthday === 0) {
+        console.log("birthday!!")
+        birthdate_text.classList.add('rainbow_birthday')
+        birthdate_text.title = "It's my birthday!!"
+    } else {
+        birthdate_text.title = `${days_until_birthday} days until my birthday`
+    }
 
     // localtime
     await set_clock()
@@ -55,6 +67,14 @@ function random_title() {
         title_header.innerHTML = "faggot";
         title_header.title = `you rolled the 1/100 chance for it to say faggot, congration | clicks: ${title_clicks}`;
     }
+}
+
+// https://stackoverflow.com/a/21093106/16589377
+function daysUntilNext(month, day){
+    const tday = new Date(), y = tday.getFullYear(), next = new Date(y, month - 1, day);
+    tday.setHours(0, 0, 0, 0);
+    if(tday>next) next.setFullYear(y+1);
+    return Math.round((next-tday)/8.64e7);
 }
 
 const page_load_promise = on_page_load();

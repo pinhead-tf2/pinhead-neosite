@@ -71,6 +71,25 @@
                 max-width: 20px;
                 max-height: 20px;
             }
+
+            .rainbow_birthday {
+                background: linear-gradient(to right, $red, $yellow, $green, $sapphire, $lavender, $pink, $lavender, $sapphire, $green, $yellow, $red);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: rainbow_animation 15s ease-in-out infinite;
+                background-size: 1000% 100%;
+            }
+
+            @keyframes rainbow_animation {
+                0%, 100% {
+                    background-position: 0 0;
+                }
+
+                50% {
+                    background-position: 100% 0;
+                }
+            }
         }
     }
 

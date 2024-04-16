@@ -38,6 +38,13 @@
             p {
                 margin: 0;
             }
+
+            #random_cat {
+                display: block;
+                max-height: 512px;
+                height: auto;
+                width: auto;
+            }
         }
     }
 }

@@ -308,6 +308,22 @@ header #settings_icon_path {
   max-width: 20px;
   max-height: 20px;
 }
+.sidebar .sidebar_infocard .infocard_connections .rainbow_birthday {
+  background: linear-gradient(to right, #f38ba8, #f9e2af, #a6e3a1, #74c7ec, #b4befe, #f5c2e7, #b4befe, #74c7ec, #a6e3a1, #f9e2af, #f38ba8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 15s ease-in-out infinite;
+  background-size: 1000% 100%;
+}
+@keyframes rainbow_animation {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
 .sidebar .sidebar_navblock .navblock_pagelist {
   list-style: none;
   padding: 0;
@@ -410,6 +426,12 @@ header #settings_icon_path {
 }
 .main .main_card .card_content p {
   margin: 0;
+}
+.main .main_card .card_content #random_cat {
+  display: block;
+  max-height: 512px;
+  height: auto;
+  width: auto;
 }
 
 @media only screen and (max-width: 640px) {

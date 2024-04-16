@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>pinhead's site</title>
-    <link href="assets/images/izumi.png" rel="icon" type="image/x-icon">
+    <link href="assets/images/izumi-angle-transparent-square.png" rel="icon" type="image/x-icon">
     <!--Discord Rich Embed Data-->
     <meta content="pinhead.dev" property="og:site_name">
     <meta content="https://pinhead.dev" property="og:url">
@@ -22,31 +22,21 @@
     <!--High importance, load first-->
     <!--Low importance, load last-->
     <script defer src="assets/scripts/sidebar_inserts.js"></script>
-    <script defer src="assets/scripts/settings_menu.js"></script>
+    <script defer src="assets/scripts/header_handler.js"></script>
+<!--    <script defer src="assets/scripts/cat_randomizer.js"></script>-->
+<!--    <script defer src="assets/scripts/settings_menu.js"></script>-->
 </head>
 <body>
 <div class="animated_background"></div>
 <header>
     <a id="site_logo">
-        <img alt="Izumi" class="header_icon" id="site_logo_image" src="assets/images/izumi.png">
+        <img alt="Izumi" class="header_icon" id="site_logo_image" src="assets/images/izumi-angle-transparent-square.png">
     </a>
     <a id="site_header">
         <h3>pinhead's site</h3>
     </a>
-    <div class="dropdown dropdown_hoverable">
-        <p class="dropdown_title">pages</p>
-        <div class="dropdown_content">
-            <ul>
-                <li><a href="#">about</a></li>
-                <li class="has_nested">
-                    <ul>
-                        <li class="nested"><a href="#">test</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">services</a></li>
-            </ul>
-        </div>
+    <div class="dropdown dropdown_hoverable" id="pages_navigator">
+
     </div>
     <div class="dropdown dropdown_hoverable">
         <p class="dropdown_title">webring</p>
@@ -83,7 +73,7 @@
         <div class="sidebar_infocard">
             <!--            <div id="sidebar_picture_container">-->
             <img alt="Profile picture depicting a blue humanoid slime" id="profile_picture"
-                 src="/assets/images/mizu.png"
+                 src="/assets/images/mizu-coniecal-bg.png"
                  title="Mizu, the slime mage">
             <!--            </div>-->
             <h1 id="username">pinhead</h1>
@@ -101,7 +91,7 @@
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
                     </svg>
-                    <span>September 13th</span>
+                    <span id="birthday_date">September 13th</span>
                     <span class="small_subtext" id="birthday_subtext" title="September 13, 2004">age (js)</span>
                 </li>
                 <li>
@@ -134,19 +124,21 @@
         <div class="main_card">
             <div class="card_content">
                 <h1>
-                    welcome to the v3 test site
+                    Welcome!
                 </h1>
             </div>
         </div>
         <div class="main_card">
             <div class="card_content">
-                <img alt="MUSKET."
+                <img alt="A sketch of Mizu."
                      class="card_icon"
-                     src="https://irongatearmory.com/wp-content/uploads/2021/05/1054-Brown-Bess-with-Bayonet.jpg">
-                <h2>Own a musket for home defense</h2>
-                <h4 class="card_subtitle">since that's what the founding fathers intended</h4>
+                     src="/assets/images/mizu-merritz-chibi-noname-square.png">
+                <h2>I'm pinhead, and this is my website</h2>
+                <h4 class="card_subtitle">Thanks for stopping by!</h4>
                 <hr>
-                <span>Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He Bleeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended.</span>
+                <p>I have some extra pages here, use the navigator at the top to explore more! Alternatively, come chat with me directly via my Discord server or my email, which you can find in the sidebar (above this if you're on mobile). </p>
+                <br>
+                <p>balls</p>
             </div>
         </div>
         <div class="main_card">
@@ -163,9 +155,9 @@
         </div>
         <div class="main_card">
             <div class="card_content">
-                <h2>image card</h2>
+                <h2>Have a random cat!</h2>
                 <hr>
-                <img alt="wuh cat" src="assets/images/test-cat.gif">
+                <img alt="A random cat from Cat As A Service." src="https://cataas.com/cat/cute" id="random_cat" loading="lazy">
             </div>
         </div>
     </main>
