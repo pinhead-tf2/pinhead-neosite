@@ -1,15 +1,18 @@
 const random_titles = ["local gay person", "resident tf2 player", "dragon lover", "passionate about python",
-    "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan"];
+    "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan",
+    "central mass array victor", "john pressure", "i use catppuccin btw", "made with inter", "be silly do tomfoolery",
+    "proud unusual owner", "crazy bread is just normal bread to me"];
 const birthday_string = "September 13, 2004, 12:00:00";
 const title_header = document.getElementById("username_subtitle");
 const time_subtext = document.getElementById("time_subtext")
 let title_clicks = 0;
 
+/**
+ * main function handling page load
+ *
+ * @returns {Promise<void>}
+ */
 async function on_page_load() {
-    /**
-     * Main function handling all things on page load
-     */
-
     // inserting random titles in the sidebar
     random_title();
 
@@ -28,7 +31,7 @@ async function on_page_load() {
         birthdate_text.classList.add('rainbow_birthday')
         birthdate_text.title = "It's my birthday!!"
     } else {
-        birthdate_text.title = `${days_until_birthday} days until my birthday`
+        birthdate_text.title = `${days_until_birthday} days until my birthday | September 13th 2004`
     }
 
     // localtime
@@ -48,10 +51,12 @@ async function set_clock() {
     })
 }
 
-function random_title() {
-    /**
-     * Inserts a title at random from the random_titles array, into the sidebar subtitle
-     */
+/**
+ * Inserts a title at random from the random_titles array, into the sidebar subtitle
+ *
+ * @returns {*}
+ */
+function random_title() {``
     const random = Math.floor(Math.random() * random_titles.length);
     // prevents duplicates
     if (title_header.innerHTML === random_titles[random]) {
@@ -60,21 +65,26 @@ function random_title() {
     title_header.innerHTML = random_titles[random];
     title_header.title = `a randomly cycled title (click to change) | clicks: ${title_clicks}`;
 
-    // the funny 1/100 chance for it to just say faggot
-    // why? because i thought it was funny (it is)
     const secret_random = Math.random();
     if (secret_random >= 0.99) {
-        title_header.innerHTML = "faggot";
-        title_header.title = `you rolled the 1/100 chance for it to say faggot, congration | clicks: ${title_clicks}`;
+        title_header.innerHTML = "surprise!";
+        title_header.title = `you rolled the 1/100 chance for it to say this, congration | clicks: ${title_clicks}`;
     }
 }
 
-// https://stackoverflow.com/a/21093106/16589377
-function daysUntilNext(month, day){
+/**
+ * Function found from https://stackoverflow.com/a/21093106/16589377
+ * Returns the days until a selected date
+ *
+ * @param month
+ * @param day
+ * @returns {number}
+ */
+function daysUntilNext(month, day) {
     const tday = new Date(), y = tday.getFullYear(), next = new Date(y, month - 1, day);
     tday.setHours(0, 0, 0, 0);
-    if(tday>next) next.setFullYear(y+1);
-    return Math.round((next-tday)/8.64e7);
+    if (tday > next) next.setFullYear(y + 1);
+    return Math.round((next - tday) / 8.64e7);
 }
 
 const page_load_promise = on_page_load();
