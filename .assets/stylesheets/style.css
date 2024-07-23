@@ -87,6 +87,9 @@ header {
   top: 0;
   z-index: 10;
 }
+header #site_logo, header #site_header {
+  text-decoration: none;
+}
 header #site_logo {
   margin-left: 8px;
 }
@@ -274,11 +277,11 @@ header #settings_icon_path {
   margin: 0 20px 0 20px;
 }
 .sidebar .sidebar_infocard #username {
-  background: repeating-linear-gradient(110deg, #a6e3a1, #94e2d5, #89dceb, #74c7ec, #89b4fa, #89b4fa, #74c7ec, #89dceb, #94e2d5, #a6e3a1) repeat-x;
+  background: repeating-linear-gradient(110deg, #a6e3a1, #94e2d5, #89dceb, #74c7ec, #89b4fa, #b4befe, #cba6f7, #cba6f7, #b4befe, #89b4fa, #74c7ec, #89dceb, #94e2d5, #a6e3a1) repeat-x;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: rainbow_animation 5s linear infinite;
+  animation: rainbow_animation 10s linear infinite;
   background-size: 400% 100%;
 }
 .sidebar .sidebar_infocard #username_subtitle {
@@ -419,6 +422,7 @@ header #settings_icon_path {
 }
 .main .main_card .card_content .card_subtitle {
   color: #a6adc8;
+  font-style: italic;
 }
 .main .main_card .card_content img {
   max-width: 100%;

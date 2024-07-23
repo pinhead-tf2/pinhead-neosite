@@ -17,6 +17,10 @@ header {
         @extend %self-alignment;
     }
 
+    #site_logo, #site_header {
+        text-decoration: none;
+    }
+
     #site_logo {
         margin-left: $small-space;
     }
