@@ -442,6 +442,12 @@ header #settings_icon_path {
   height: auto;
   width: auto;
 }
+.main .red_text {
+  color: #f38ba8;
+}
+.main .yellow_text {
+  color: #f9e2af;
+}
 
 @media only screen and (max-width: 640px) {
   .screen {

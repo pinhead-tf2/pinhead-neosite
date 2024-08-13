@@ -2,9 +2,9 @@ const self_proclaimed_titles = ["local bi person", "resident tf2 player", "drago
     "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan",
     "central mass array victor", "john pressure", "i use catppuccin btw", "made with inter", "be silly do tomfoolery",
     "proud unusual owner", "crazy bread is just normal bread to me"];
-const profile_pictures = ["/.assets/images/mizu-coniecal-bg.png",
-    "/.assets/images/mizu-merritz-chibi-noname-square.png", "/.assets/images/mizu-angle-whitebg-square.png",
-    "/.assets/images/mizu-noble-blush-purple-squared.png"];
+const profile_pictures = ["/.assets/images/mizu/mizu-coniecal-bg.png",
+    "/.assets/images/mizu/mizu-merritz-chibi-noname-square.png", "/.assets/images/mizu/mizu-angle-whitebg-square.png",
+    "/.assets/images/mizu/mizu-noble-blush-purple-squared.png", "/.assets/images/mizu/mizu-merritz-sweater-square.png",];
 const birthday_string = "September 13, 2004, 12:00:00";
 const title_header = document.getElementById("username_subtitle");
 const time_subtext = document.getElementById("time_subtext")
