@@ -420,6 +420,13 @@ header #settings_icon_path {
   margin: 4px 0;
   border-color: #9399b2;
 }
+.main .main_card .card_content ul {
+  padding-left: 32px;
+  margin: 8px 0;
+}
+.main .main_card .card_content .topless {
+  margin-top: 0;
+}
 .main .main_card .card_content .card_subtitle {
   color: #a6adc8;
   font-style: italic;
@@ -442,11 +449,30 @@ header #settings_icon_path {
   height: auto;
   width: auto;
 }
+.main .main_card .card_content .device_name {
+  font-weight: bold;
+}
+.main .main_card .card_content .subtext {
+  font-size: 14px;
+}
+.main .main_card .card_content .label {
+  font-size: 12px;
+  color: #a6adc8;
+}
 .main .red_text {
   color: #f38ba8;
 }
 .main .yellow_text {
   color: #f9e2af;
+}
+.main .green_text {
+  color: #a6e3a1;
+}
+.main .blue_text {
+  color: #89b4fa;
+}
+.main .mauve_text {
+  color: #cba6f7;
 }
 
 @media only screen and (max-width: 640px) {
