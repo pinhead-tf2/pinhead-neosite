@@ -1,0 +1,47 @@
+@import "functions";
+@import "variables";
+
+@media only screen and (max-width: 640px) {
+    .screen {
+        flex-direction: column;
+        margin: $medium-space $large-space 0 $large-space;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .dropdown_content {
+        left: 0;
+    }
+
+    .dropdown_webring {
+        left: -66px;
+    }
+
+    #site_header {
+        display: none;
+    }
+
+    #profile_picture {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .dropdown_content {
+        display: flex;
+        visibility: hidden;
+        left: 0;
+        transition: 0s 0.5s;
+    }
+
+    .dropdown_hoverable:hover .dropdown_content {
+        visibility: visible;
+        transition-delay: 0s;
+    }
+}
