@@ -9,7 +9,7 @@ async function on_page_load() {
         return el !== "";
     })
 
-    fetch('/.assets/templates/inserts/page_list.html').then(function (response) {
+    fetch('/assets/templates/inserts/page_list.html').then(function (response) {
         if (response.ok) {
             return response.text();
         }
