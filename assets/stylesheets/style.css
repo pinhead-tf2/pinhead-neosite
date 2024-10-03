@@ -160,13 +160,16 @@ header #settings_icon_path {
   color: inherit;
   font-size: 16px;
 }
-.dropdown_content .has_nested {
+.dropdown_content .ignore_border {
   border-left: 0;
 }
 .dropdown_content .nested {
   border-left-color: #6c7086;
   padding-top: 0;
   padding-bottom: 0;
+}
+.dropdown_content .highlight:hover {
+  background-color: #45475a;
 }
 .dropdown_content .selected {
   color: #a6e3a1;
@@ -392,7 +395,7 @@ header #settings_icon_path {
   flex-direction: column;
 }
 
-.main .main_card .card_content img, .main .main_card {
+.main .main_card .card_content .rounded_borders, .main .main_card {
   border-radius: 16px;
 }
 
@@ -431,11 +434,11 @@ header #settings_icon_path {
   color: #a6adc8;
   font-style: italic;
 }
-.main .main_card .card_content img {
-  max-width: 100%;
+.main .main_card .card_content .card_embed {
   float: left;
   margin: 0 10px 8px 0;
   background: #f5e0dc;
+  max-width: 100%;
 }
 .main .main_card .card_content .card_icon {
   max-width: 128px;
@@ -458,6 +461,10 @@ header #settings_icon_path {
 .main .main_card .card_content .label {
   font-size: 12px;
   color: #a6adc8;
+}
+.main .main_card .card_content .title_label {
+  font-size: 20px;
+  font-style: italic;
 }
 .main .red_text {
   color: #f38ba8;
@@ -509,6 +516,9 @@ header #settings_icon_path {
   .dropdown_hoverable:hover .dropdown_content {
     visibility: visible;
     transition-delay: 0s;
+  }
+  .card_icon {
+    max-width: 384px !important;
   }
 }
 

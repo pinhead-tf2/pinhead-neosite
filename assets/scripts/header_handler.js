@@ -9,12 +9,17 @@ async function on_page_load() {
         return el !== "";
     })
 
+    if (parsed_path[parsed_path.length-1] === "index.html") {
+        parsed_path.pop()
+    }
+
     fetch('/assets/templates/inserts/page_list.html').then(function (response) {
         if (response.ok) {
             return response.text();
         }
         throw response;
     }).then(function (text) {
+        console.log(parsed_path)
         const pages_navigator = document.getElementById('pages_navigator');
         pages_navigator.innerHTML = text;
         const pages = pages_navigator.getElementsByTagName('li')

@@ -24,7 +24,7 @@
                 margin: $small-space 0;
             }
 
-            .topless {  // haha like my so
+            .topless { // haha like my so
                 margin-top: 0;
             }
 
@@ -33,16 +33,19 @@
                 font-style: italic;
             }
 
-            img {
-                @extend %rounded-border;
-                max-width: 100%;
+            .card_embed {
                 float: left;
                 margin: 0 $medium-space $small-space 0;
                 background: $rosewater;
+                max-width: 100%;
             }
 
             .card_icon {
                 max-width: 128px;
+            }
+
+            .rounded_borders {
+                @extend %rounded-border;
             }
 
             p {
@@ -67,6 +70,11 @@
             .label {
                 font-size: 12px;
                 color: $subtext0;
+            }
+
+            .title_label {
+                font-size: $header4-size;
+                font-style: italic;
             }
         }
     }

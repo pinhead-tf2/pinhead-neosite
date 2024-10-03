@@ -1,6 +1,6 @@
 const self_proclaimed_titles = ["local bi person", "resident tf2 player", "dragon lover", "passionate about python",
     "praise the code", "breakcore enjoyer", "pastel is love", "flood escapist", "avid creo enjoyer", "#1 glacier fan",
-    "central mass array victor", "john pressure", "i use catppuccin btw", "made with inter", "be silly do tomfoolery",
+    "solo central mass array victor", "john pressure", "i use catppuccin btw", "made with inter", "be silly do tomfoolery",
     "proud unusual owner", "crazy bread is just normal bread to me"];
 const profile_pictures = ["/assets/images/mizu/mizu-coniecal-bg.png",
     "/assets/images/mizu/mizu-merritz-chibi-noname-square.png", "/assets/images/mizu/mizu-angle-whitebg-square.png",
