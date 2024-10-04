@@ -500,6 +500,9 @@ header #settings_icon_path {
 .main .main_card .card_content .device_name {
   font-weight: bold;
 }
+.main .main_card .card_content .inline_header {
+  font-size: 20px;
+}
 .main .main_card .card_content .subtext {
   font-size: 14px;
 }
@@ -551,13 +554,13 @@ header #settings_icon_path {
     max-width: 384px !important;
   }
 }
-.main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
+.main .main_card .card_content .gradient_text, .main .main_card .card_content .firstcomp_solo {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
-.main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
+.main .main_card .card_content .gradient_text, .main .main_card .card_content .firstcomp_solo {
   text-decoration: none !important;
 }
 
@@ -592,6 +595,15 @@ header #settings_icon_path {
 }
 .main .main_card .card_content #minds_of_misery {
   background: linear-gradient(150deg, #b9b9b9, #4d5254, #666363);
+}
+.main .main_card .card_content #active_volcanic_mines_v3 {
+  background: linear-gradient(#82400e, #9f5924, #b8723d, #9f5924, #82400e);
+}
+.main .main_card .card_content #forest_facility {
+  background: linear-gradient(#9c90a6, #9c90a6, #9c90a6, #716380, #716380, #716380, #43394d, #43394d, #43394d);
+}
+.main .main_card .card_content #decaying_silo_v2 {
+  background: linear-gradient(#ffffff, #9ff7ff);
 }
 .main .main_card .card_content #new {
   background: linear-gradient(#fc7f03, #f7900a);
