@@ -39,11 +39,11 @@
 }
 
 %gradient_text_clip {
-    background-clip: text;
+    background-clip: text !important;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent !important;
 }
 
 %no_text_deco {
-    text-decoration: none;
+    text-decoration: none !important;
 }

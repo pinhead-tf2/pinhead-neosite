@@ -313,9 +313,9 @@ header #settings_icon_path {
 }
 
 .sidebar .sidebar_infocard .infocard_connections .rainbow_birthday, .sidebar .sidebar_infocard #username {
-  background-clip: text;
+  background-clip: text !important;
   -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .sidebar {
@@ -552,13 +552,13 @@ header #settings_icon_path {
   }
 }
 .main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
-  background-clip: text;
+  background-clip: text !important;
   -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @property --angle {
