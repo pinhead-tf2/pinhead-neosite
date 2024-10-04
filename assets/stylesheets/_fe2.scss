@@ -1,50 +1,56 @@
 @import "functions";
 
 @property --angle {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
 }
 
-@keyframes rotate_gradient {
-    to {
-        --angle: 360deg;
+.main {
+    .main_card {
+        .card_content {
+            @keyframes rotate_gradient {
+                to {
+                    --angle: 360deg;
+                }
+            }
+
+            .gradient_text {
+                @extend %gradient_text_clip, %no_text_deco;
+            }
+
+            .firstcomp_solo {
+                @extend %gradient_text_clip, %no_text_deco;
+                background: linear-gradient(110deg, $sky, $mauve, $sky);
+                animation: scrolling_gradient_animation 2500ms linear infinite;
+                background-size: 400% 100%;
+            }
+
+            #central_mass_array {
+                background: linear-gradient(var(--angle), #093939, #00ffff, #093939);
+                --angle: 0deg;
+                animation: rotate_gradient 5000ms linear infinite;
+            }
+
+            #whirlwind_wasteland {
+                background: linear-gradient(#7387c2, #57589d, #7696d5);
+            }
+
+            #wildwood_waterways {
+                background: linear-gradient(#fc7f03, #f7900a, #784c13);
+            }
+
+            #abandoned_harbour {
+                background: linear-gradient(#851d14, #941b03, #520e16);
+            }
+
+            #minds_of_misery {
+                background: linear-gradient(150deg, #b9b9b9, #4d5254, #666363);
+            }
+
+            #new {
+                background: linear-gradient(#fc7f03, #f7900a);
+            }
+        }
     }
-}
-
-.gradient_text {
-    @extend %gradient_text_clip, %no_text_deco;
-}
-
-.firstcomp_solo {
-    @extend %gradient_text_clip, %no_text_deco;
-    background: linear-gradient(110deg, $sky, $mauve, $sky);
-    animation: scrolling_gradient_animation 2500ms linear infinite;
-    background-size: 400% 100%;
-}
-
-#central_mass_array {
-    background: linear-gradient(var(--angle), #093939, #00ffff, #093939);
-    --angle: 0deg;
-    animation: rotate_gradient 5000ms linear infinite;
-}
-
-#whirlwind_wasteland {
-    background: linear-gradient(#7387c2, #57589d, #7696d5);
-}
-
-#wildwood_waterways {
-    background: linear-gradient(#fc7f03, #f7900a, #784c13);
-}
-
-#abandoned_harbour {
-    background: linear-gradient(#851d14, #941b03, #520e16);
-}
-
-#minds_of_misery {
-    background: linear-gradient(150deg, #b9b9b9, #4d5254,#666363);
-}
-
-#new {
-    background: linear-gradient(#fc7f03, #f7900a);
 }

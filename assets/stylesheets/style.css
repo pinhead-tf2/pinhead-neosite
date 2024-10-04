@@ -551,13 +551,13 @@ header #settings_icon_path {
     max-width: 384px !important;
   }
 }
-.firstcomp_solo, .gradient_text {
+.main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
   background-clip: text;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 
-.firstcomp_solo, .gradient_text {
+.main .main_card .card_content .firstcomp_solo, .main .main_card .card_content .gradient_text {
   text-decoration: none;
 }
 
@@ -571,35 +571,29 @@ header #settings_icon_path {
     --angle: 360deg;
   }
 }
-.firstcomp_solo {
+.main .main_card .card_content .firstcomp_solo {
   background: linear-gradient(110deg, #89dceb, #cba6f7, #89dceb);
   animation: scrolling_gradient_animation 2500ms linear infinite;
   background-size: 400% 100%;
 }
-
-#central_mass_array {
+.main .main_card .card_content #central_mass_array {
   background: linear-gradient(var(--angle), #093939, #00ffff, #093939);
   --angle: 0deg;
   animation: rotate_gradient 5000ms linear infinite;
 }
-
-#whirlwind_wasteland {
+.main .main_card .card_content #whirlwind_wasteland {
   background: linear-gradient(#7387c2, #57589d, #7696d5);
 }
-
-#wildwood_waterways {
+.main .main_card .card_content #wildwood_waterways {
   background: linear-gradient(#fc7f03, #f7900a, #784c13);
 }
-
-#abandoned_harbour {
+.main .main_card .card_content #abandoned_harbour {
   background: linear-gradient(#851d14, #941b03, #520e16);
 }
-
-#minds_of_misery {
+.main .main_card .card_content #minds_of_misery {
   background: linear-gradient(150deg, #b9b9b9, #4d5254, #666363);
 }
-
-#new {
+.main .main_card .card_content #new {
   background: linear-gradient(#fc7f03, #f7900a);
 }
 
