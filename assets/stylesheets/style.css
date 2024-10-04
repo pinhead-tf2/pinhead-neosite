@@ -43,6 +43,51 @@ body h3 {
 body h4 {
   font-size: 20px;
 }
+body .rosewater_text {
+  color: #f5e0dc;
+}
+body .flamingo_text {
+  color: #f2cdcd;
+}
+body .pink_text {
+  color: #f5c2e7;
+}
+body .mauve_text {
+  color: #cba6f7;
+}
+body .red_text {
+  color: #f38ba8;
+}
+body .maroon_text {
+  color: #eba0ac;
+}
+body .peach_text {
+  color: #fab387;
+}
+body .yellow_text {
+  color: #f9e2af;
+}
+body .green_text {
+  color: #a6e3a1;
+}
+body .teal_text {
+  color: #94e2d5;
+}
+body .sky_text {
+  color: #89dceb;
+}
+body .sapphire_text {
+  color: #74c7ec;
+}
+body .blue_text {
+  color: #89b4fa;
+}
+body .lavender_text {
+  color: #b4befe;
+}
+body .italics {
+  font-style: italic;
+}
 
 .animated_background {
   position: fixed;
@@ -61,6 +106,14 @@ body h4 {
   }
   to {
     background-position: -50px 50px;
+  }
+}
+@keyframes scrolling_gradient_animation {
+  0% {
+    background-position: -33% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 .screen {
@@ -259,6 +312,12 @@ header #settings_icon_path {
   margin-bottom: 20px;
 }
 
+.sidebar .sidebar_infocard .infocard_connections .rainbow_birthday, .sidebar .sidebar_infocard #username {
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+
 .sidebar {
   width: 20%;
   height: 100%;
@@ -281,10 +340,7 @@ header #settings_icon_path {
 }
 .sidebar .sidebar_infocard #username {
   background: repeating-linear-gradient(110deg, #a6e3a1, #94e2d5, #89dceb, #74c7ec, #89b4fa, #b4befe, #cba6f7, #cba6f7, #b4befe, #89b4fa, #74c7ec, #89dceb, #94e2d5, #a6e3a1) repeat-x;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 10s linear infinite;
+  animation: scrolling_gradient_animation 10s linear infinite;
   background-size: 400% 100%;
 }
 .sidebar .sidebar_infocard #username_subtitle {
@@ -321,19 +377,8 @@ header #settings_icon_path {
 }
 .sidebar .sidebar_infocard .infocard_connections .rainbow_birthday {
   background: repeating-linear-gradient(110deg, #f38ba8, #f9e2af, #a6e3a1, #74c7ec, #b4befe, #f5c2e7, #f5c2e7, #b4befe, #74c7ec, #a6e3a1, #f9e2af, #f38ba8) repeat-x;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 5s linear infinite;
+  animation: scrolling_gradient_animation 5s linear infinite;
   background-size: 400% 100%;
-}
-@keyframes rainbow_animation {
-  0% {
-    background-position: -33% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
 }
 .sidebar .sidebar_navblock .navblock_pagelist {
   list-style: none;
@@ -466,21 +511,6 @@ header #settings_icon_path {
   font-size: 20px;
   font-style: italic;
 }
-.main .red_text {
-  color: #f38ba8;
-}
-.main .yellow_text {
-  color: #f9e2af;
-}
-.main .green_text {
-  color: #a6e3a1;
-}
-.main .blue_text {
-  color: #89b4fa;
-}
-.main .mauve_text {
-  color: #cba6f7;
-}
 
 @media only screen and (max-width: 640px) {
   .screen {
@@ -520,6 +550,57 @@ header #settings_icon_path {
   .card_icon {
     max-width: 384px !important;
   }
+}
+.firstcomp_solo, .gradient_text {
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.firstcomp_solo, .gradient_text {
+  text-decoration: none;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes rotate_gradient {
+  to {
+    --angle: 360deg;
+  }
+}
+.firstcomp_solo {
+  background: linear-gradient(110deg, #89dceb, #cba6f7, #89dceb);
+  animation: scrolling_gradient_animation 2500ms linear infinite;
+  background-size: 400% 100%;
+}
+
+#central_mass_array {
+  background: linear-gradient(var(--angle), #093939, #00ffff, #093939);
+  --angle: 0deg;
+  animation: rotate_gradient 5000ms linear infinite;
+}
+
+#whirlwind_wasteland {
+  background: linear-gradient(#7387c2, #57589d, #7696d5);
+}
+
+#wildwood_waterways {
+  background: linear-gradient(#fc7f03, #f7900a, #784c13);
+}
+
+#abandoned_harbour {
+  background: linear-gradient(#851d14, #941b03, #520e16);
+}
+
+#minds_of_misery {
+  background: linear-gradient(150deg, #b9b9b9, #4d5254, #666363);
+}
+
+#new {
+  background: linear-gradient(#fc7f03, #f7900a);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,3 +37,13 @@
 %self-alignment {
     align-self: center;
 }
+
+%gradient_text_clip {
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+}
+
+%no_text_deco {
+    text-decoration: none;
+}

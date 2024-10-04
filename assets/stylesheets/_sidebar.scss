@@ -31,12 +31,9 @@
         }
 
         #username {
-            //color: $sky;
+            @extend %gradient_text_clip;
             background: repeating-linear-gradient(110deg, $green, $teal, $sky, $sapphire, $blue, $lavender, $mauve, $mauve, $lavender, $blue, $sapphire, $sky, $teal, $green) repeat-x;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            animation: rainbow_animation 10s linear infinite;
+            animation: scrolling_gradient_animation 10s linear infinite;
             background-size: 400% 100%;
         }
 
@@ -79,17 +76,10 @@
             }
 
             .rainbow_birthday {
+                @extend %gradient_text_clip;
                 background: repeating-linear-gradient(110deg, $red, $yellow, $green, $sapphire, $lavender, $pink, $pink, $lavender, $sapphire, $green, $yellow, $red) repeat-x;
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                animation: rainbow_animation 5s linear infinite;
+                animation: scrolling_gradient_animation 5s linear infinite;
                 background-size: 400% 100%;
-            }
-
-            @keyframes rainbow_animation {
-                0%{background-position:-33% 50%}
-                100%{background-position:100% 50%}
             }
         }
     }
