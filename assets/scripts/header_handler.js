@@ -9,7 +9,7 @@ async function on_page_load() {
         return el !== "";
     })
 
-    if (parsed_path[parsed_path.length-1] === "index.html") {
+    if (parsed_path[parsed_path.length - 1] === "index.html") {
         parsed_path.pop()
     }
 
@@ -19,23 +19,22 @@ async function on_page_load() {
         }
         throw response;
     }).then(function (text) {
-        console.log(parsed_path)
         const pages_navigator = document.getElementById('pages_navigator');
         pages_navigator.innerHTML = text;
         const pages = pages_navigator.getElementsByTagName('li')
         for (let i = 0; i < pages.length; i++) {
             if (!pages[i].innerHTML.includes("\n") && pages[i].innerHTML.includes(parsed_path[parsed_path.length - 1])) {
-                pages[i].classList.add('selected')
+                console.log(pages[i].innerHTML, "|", parsed_path[parsed_path.length - 1])
+
+                const regex = new RegExp("$|\\b" + parsed_path[parsed_path.length - 1] + "\\b", "i");
+                if (regex.test(pages[i].innerHTML)) {
+                    console.log("matched")
+                    pages[i].classList.add('selected')
+                    return
+                }
             }
         }
     });
-
-    // const pages = document.getElementById('pagelist').getElementsByTagName('li')
-    // for (let i = 0; i < pages.length; i++) {
-    //     if (pages[i].innerHTML.includes()) {
-    //
-    //     }
-    // }
 }
 
 const header_page_load_promise = on_page_load();
