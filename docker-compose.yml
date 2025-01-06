@@ -1,7 +1,0 @@
-version: '3'
-services:
-  pinhead-website:
-    image: pinheadtf2/pinhead-website
-    ports:
-      - '80:40206'
-    restart: unless-stopped
