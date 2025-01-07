@@ -2,6 +2,9 @@
     <title>pinhead's svelte test</title>
 </svelte:head>
 
-<h1 class="m-0 py-4">Welcome to SvelteKit</h1>
-<p class="m-0 py-1">Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
+<main class="flex justify-center">
+    <div class="flex flex-col justify-center items-center max-w-3xl w-full bg-[var(--ctp-mocha-mantle-hex)] my-20 rounded shadow-2xl">
+        <h1 class-disabled="m-0 py-4">pinhead's site</h1>
+        <p>super special svelte edition<br><br></p>
+    </div>
+</main>

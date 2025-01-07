@@ -429,5 +429,9 @@
     a:visited {
         color: var(--ctp-mocha-mauve-hex);
     }
+
+    --grid-max-size: 50;
+    --grid-line-width: 4;
+    --grid-fill-color: var(--ctp-mocha-crust-hsl);
 }
 
