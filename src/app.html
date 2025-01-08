@@ -7,38 +7,9 @@
     <link href="%sveltekit.assets%/shared.css" media="all" rel="stylesheet" type="text/css">
     <link href="https://rsms.me/" rel="preconnect">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-    <style>
-        #grid {
-            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 4 4 L 46 4 L 46 46 L 4 46" fill="hsl(240, 21%, 15%)"/%3E%3C/svg%3E');
-            animation: grid_scroll 20000ms linear infinite;
-        }
-
-        @keyframes grid_scroll {
-            from {
-                transform: translate(-55%, -55%) rotate(45deg)
-            }
-            to {
-                transform: translate(-65%, -45%) rotate(45deg)
-            }
-        }
-
-        @keyframes gradient_scroll {
-            0% {
-                background-position: -33% 50%
-            }
-            100% {
-                background-position: 100% 50%
-            }
-        }
-    </style>
     %sveltekit.head%
 </head>
-<body data-sveltekit-preload-data="hover" class="m-0">
-<div class="-z-10 content-none fixed w-screen h-screen"
-     style="background-image: linear-gradient(75deg in hsl longer hue, hsla(267, 84%, 81%, .35), hsla(343, 81%, 75%, .35))"></div>
-<div class="-z-10 content-none fixed w-[5000px] h-[5000px] origin-center overflow-clip" id="grid"></div>
-<div class="-z-10 content-none fixed w-screen h-screen backdrop-blur-sm"></div>
-<nav></nav>
+<body class="m-0" data-sveltekit-preload-data="hover">
 <div id="container" style="display: contents">%sveltekit.body%</div>
 </body>
 </html>

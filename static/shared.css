@@ -427,8 +427,11 @@
     }
 
     a:visited {
-        color: var(--ctp-mocha-mauve-hex);
+        color: inherit;
     }
+
+    --color-start: hsla(267, 84%, 81%, .35);
+    --color-end: hsla(343, 81%, 75%, .35);
 
     --grid-max-size: 50;
     --grid-line-width: 4;
