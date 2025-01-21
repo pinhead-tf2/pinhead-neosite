@@ -419,15 +419,23 @@
     --ctp-mocha-crust-rgb: rgb(17, 17, 27);
     --ctp-mocha-crust-hsl: hsl(240, 23%, 9%);
 
-    --color-start: hsla(267, 84%, 81%, .35);
-    --color-end: hsla(343, 81%, 75%, .35);
+    --background-color-start: hsla(267, 84%, 81%, .35);
+    --background-color-end: hsla(343, 81%, 75%, .35);
+
+    --pinhead-gradient-animated: repeating-linear-gradient(110deg, var(--ctp-mocha-green-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-mauve-hex), var(--ctp-mocha-mauve-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-green-hex));
+    --pinhead-gradient: repeating-linear-gradient(110deg, var(--ctp-mocha-green-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-mauve-hex));
 
     --grid-max-size: 50;
     --grid-line-width: 4;
     --grid-fill-color: var(--ctp-mocha-crust-hsl);
 
-    --header-current-color: var(--ctp-mocha-sky-rgb);
+    --header-highlight-color: var(--ctp-mocha-blue-hex);
+    --header-highlight-background: rgb(137 180 250 / 10%);
+    --header-current-color: var(--ctp-mocha-sky-hex);
     --header-current-background: rgb(137 220 235 / 20%);
+
+    --wavey-move-distance: 0.08rem;
+    --wavey-move-distance-negative: -0.08rem;
 }
 
 body {
@@ -440,5 +448,28 @@ body {
 
     a:visited {
         color: inherit;
+    }
+
+    .pinhead-text {
+        background: var(--pinhead-gradient);
+        color: transparent;
+        background-clip: text;
+    }
+
+    .pinhead-text-animated {
+        background: var(--pinhead-gradient-animated) repeat-x;
+        color: transparent;
+        background-clip: text;
+        animation: gradient_scroll 2s linear infinite;
+        background-size: 400% 100%;
+    }
+
+    @keyframes gradient_scroll {
+        0% {
+            background-position: -33% 50%
+        }
+        100% {
+            background-position: 100% 50%
+        }
     }
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="added navbar">
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="i got the navbar items centered">
+      <change afterPath="$PROJECT_DIR$/src/lib/modules/WaveyText.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/shared.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,7 @@
         <option value="Background.svelte" />
         <option value="NavEntry.svelte" />
         <option value="+page.svelte" />
+        <option value="WaveyText" />
       </list>
     </option>
   </component>
@@ -99,7 +102,7 @@
       <workItem from="1736373024538" duration="6875000" />
       <workItem from="1736722492147" duration="2000" />
       <workItem from="1737065553825" duration="109000" />
-      <workItem from="1737402529665" duration="16177000" />
+      <workItem from="1737402529665" duration="23813000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -125,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736380044339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="i got the navbar items centered">
+      <option name="closed" value="true" />
+      <created>1737438889095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737438889095</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +146,7 @@
     <MESSAGE value="Testing out svelte" />
     <MESSAGE value="messed with the grid more" />
     <MESSAGE value="added navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added navbar" />
+    <MESSAGE value="i got the navbar items centered" />
+    <option name="LAST_COMMIT_MESSAGE" value="i got the navbar items centered" />
   </component>
 </project>

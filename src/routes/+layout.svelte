@@ -32,21 +32,13 @@
         }
     }
 
-    @keyframes gradient_scroll {
-        0% {
-            background-position: -33% 50%
-        }
-        100% {
-            background-position: 100% 50%
-        }
-    }
-
     .normal_page {
         color: var(--ctp-mocha-subtext0-hex);
     }
 
     .normal_page:hover {
-        color: var(--ctp-mocha-blue-hex);
+        color: var(--header-highlight-color);
+        background-color: var(--header-highlight-background);
     }
 
     .current_page {
@@ -56,7 +48,7 @@
 </style>
 
 <div class="-z-10 content-none fixed w-screen h-screen"
-     style="background-image: linear-gradient(75deg in hsl longer hue, var(--color-start), var(--color-end))"></div>
+     style="background-image: linear-gradient(75deg in hsl longer hue, var(--background-color-start), var(--background-color-end))"></div>
 <div class="-z-10 content-none fixed w-[5000px] h-[5000px] origin-center overflow-clip" id="grid"></div>
 <div class="-z-10 content-none fixed w-screen h-screen backdrop-blur-sm"></div>
 
@@ -66,12 +58,12 @@
     <!--    </a>-->
 
     <div class="flex-1">
-        <div class="flex items-center h-full">
+        <div class="flex items-center h-full gap-1">
             <a href="/" style="text-decoration: none !important;">
                 <img alt="Izumi the slime hat" class="w-auto max-h-8 mr-1 py-2" src="{izumi}">
             </a>
             <a href="/" style="text-decoration: none !important;">
-                <h3 class="m-0 mr-2 font-light">pinhead's site</h3>
+                <h3 class="m-0 mr-2 font-normal italic">pinhead's site</h3>
             </a>
         </div>
     </div>
