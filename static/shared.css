@@ -434,8 +434,8 @@
     --header-current-color: var(--ctp-mocha-sky-hex);
     --header-current-background: rgb(137 220 235 / 20%);
 
-    --wavey-move-distance: 0.08rem;
-    --wavey-move-distance-negative: -0.08rem;
+    --wavy-move-distance: 0.08rem;
+    --bounce-move-distance: -0.15rem;
 }
 
 body {

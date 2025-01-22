@@ -53,16 +53,12 @@
 <div class="-z-10 content-none fixed w-screen h-screen backdrop-blur-sm"></div>
 
 <header class="fixed flex items-center justify-between top-0 left-0 right-0 z-50 px-6 bg-[var(--ctp-mocha-mantle-hex)] h-14">
-    <!--    <a href="/" style="text-decoration: none !important;">-->
-    <!--        <img alt="Izumi the slime hat" class="w-auto max-h-10 mr-1 py-2" src="{izumi}">-->
-    <!--    </a>-->
-
     <div class="flex-1">
         <div class="flex items-center h-full gap-1">
-            <a href="/" style="text-decoration: none !important;">
+            <a href="/" class="no-underline">
                 <img alt="Izumi the slime hat" class="w-auto max-h-8 mr-1 py-2" src="{izumi}">
             </a>
-            <a href="/" style="text-decoration: none !important;">
+            <a href="/" class="no-underline">
                 <h3 class="m-0 mr-2 font-normal italic">pinhead's site</h3>
             </a>
         </div>

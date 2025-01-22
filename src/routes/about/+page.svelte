@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-    import WaveyText from "$lib/modules/WaveyText.svelte";
+    import WavyText from "$lib/modules/WavyText.svelte";
 </script>
 
 <main class="relative flex justify-center top-14">
