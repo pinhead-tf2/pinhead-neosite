@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images">
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-angle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-conie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-merritz-chibi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-merritz-sweater.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-noble-blush-purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-tarr-bite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/mizu-tarr-noble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/sylis-fullbody.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/sylis-halloween.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/modules/BouncingText.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/WaveyText.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/WavyText.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/shared.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +103,7 @@
       <workItem from="1736373024538" duration="6875000" />
       <workItem from="1736722492147" duration="2000" />
       <workItem from="1737065553825" duration="109000" />
-      <workItem from="1737402529665" duration="62224000" />
+      <workItem from="1737402529665" duration="62987000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -163,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737447067057</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images">
+      <option name="closed" value="true" />
+      <created>1737532764241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737532764241</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
