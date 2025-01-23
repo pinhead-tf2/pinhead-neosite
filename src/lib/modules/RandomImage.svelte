@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { alt="", classes="", style="", excluded_images=['/izumi.png'] } = $props();
+    let { alt="", classes="", style="", excluded_images=['/izumi.png', '/Tarr-Standing.png', '/Tarr-Laying.png'] } = $props();
 
     let all_images = []
     for (let key in import.meta.glob("$lib/images/*.{png,jpg,jpeg,webp}")) {

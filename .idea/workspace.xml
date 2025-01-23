@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images">
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="small readability adjustments">
+      <change afterPath="$PROJECT_DIR$/src/lib/images/Tarr-Laying.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/images/Tarr-Standing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/modules/Grid.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/modules/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +32,8 @@
         <option value="WaveyText" />
         <option value="ReturnRandomImage" />
         <option value="TypeScript File" />
+        <option value="Grid" />
+        <option value="Header" />
       </list>
     </option>
   </component>
@@ -54,30 +65,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "svelte",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;svelte&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\images" />
+      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\static" />
     </key>
   </component>
@@ -103,7 +114,10 @@
       <workItem from="1736373024538" duration="6875000" />
       <workItem from="1736722492147" duration="2000" />
       <workItem from="1737065553825" duration="109000" />
-      <workItem from="1737402529665" duration="62987000" />
+      <workItem from="1737402529665" duration="63888000" />
+      <workItem from="1737567472755" duration="1584000" />
+      <workItem from="1737658114985" duration="2350000" />
+      <workItem from="1737660839314" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -153,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737532764241</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="small readability adjustments">
+      <option name="closed" value="true" />
+      <created>1737533629932</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737533629932</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +188,7 @@
     <MESSAGE value="i got the navbar items centered" />
     <MESSAGE value="did the coolest thing ever with this WaveyText you have no idea" />
     <MESSAGE value="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images" />
-    <option name="LAST_COMMIT_MESSAGE" value="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images" />
+    <MESSAGE value="small readability adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="small readability adjustments" />
   </component>
 </project>
