@@ -1,6 +1,6 @@
 <style>
     #grid {
-        background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 4 4 L 46 4 L 46 46 L 4 46" fill="hsl(240, 23%, 9%)"/%3E%3C/svg%3E');
+        background: var(--grid-url);
         animation: grid_scroll 20000ms linear infinite;
     }
 
@@ -14,7 +14,7 @@
     }
 </style>
 
-<div class="-z-10 content-none fixed w-screen h-screen"
+<div class="-z-10 content-none fixed w-screen h-screen "
      style="background-image: linear-gradient(75deg in hsl longer hue, var(--background-color-start), var(--background-color-end))"></div>
 <div class="-z-10 content-none fixed w-[5000px] h-[5000px] origin-center overflow-clip" id="grid"></div>
-<div class="-z-10 content-none fixed w-screen h-screen backdrop-blur-sm"></div>
+<div class="-z-10 content-none fixed w-screen h-screen backdrop-blur-xs"></div>

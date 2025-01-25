@@ -40,14 +40,16 @@
 <style>
     .bouncy_text {
         animation: bounce_character ease 2 alternate;
+        transform: translateY(calc(-1*var(--text-xs--line-height))) translateZ(0) perspective(1px);
+        backface-visibility: hidden;
     }
 
     @keyframes bounce_character {
         from {
-            transform: translateY(0)
+            transform: translateY(calc(-1*var(--text-xs--line-height))) translateZ(0) perspective(1px);
         }
         to {
-            transform: translateY(var(--bounce-move-distance))
+            transform: translateY(var(--bounce-move-distance)) translateZ(0) perspective(1px);
         }
     }
 </style>

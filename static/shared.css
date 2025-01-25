@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     /* Latte Palette */
     --ctp-latte-rosewater-hex: #dc8a78;
@@ -419,9 +423,6 @@
     --ctp-mocha-crust-rgb: rgb(17, 17, 27);
     --ctp-mocha-crust-hsl: hsl(240, 23%, 9%);
 
-    --background-color-start: hsla(267, 84%, 81%, .35);
-    --background-color-end: hsla(343, 81%, 75%, .35);
-
     --pinhead-gradient-animated: repeating-linear-gradient(110deg, var(--ctp-mocha-green-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-mauve-hex), var(--ctp-mocha-mauve-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-green-hex));
     --pinhead-gradient: repeating-linear-gradient(110deg, var(--ctp-mocha-green-hex), var(--ctp-mocha-teal-hex), var(--ctp-mocha-sapphire-hex), var(--ctp-mocha-blue-hex), var(--ctp-mocha-lavender-hex), var(--ctp-mocha-mauve-hex));
 
@@ -429,27 +430,59 @@
     --grid-line-width: 4;
     --grid-fill-color: var(--ctp-mocha-crust-hsl);
 
+    --wavy-move-distance: 0.08rem;
+    --bounce-move-distance: -0.15rem;
+}
+
+/* behold. the most godawful way to manage light/dark mode changes for components that lack easy ways to be changed */
+html {
+    color: var(--ctp-latte-text-hex);
+    background-color: var(--ctp-latte-base-hex);
+
+    --background-color-start: hsla(267, 84%, 81%);
+    --background-color-end: hsla(343, 81%, 75%);
+    --grid-url: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 4 4 L 46 4 L 46 46 L 4 46" fill="hsl(220, 21%, 85%)"/%3E%3C/svg%3E');
+
+    --header-normal-color: var(--ctp-latte-subtext0-hex);
+    --header-highlight-color: var(--ctp-latte-blue-hex);
+    --header-highlight-background: rgb(30 102 245 / 10%);
+    --header-current-color: var(--ctp-latte-sky-hex);
+    --header-current-background: rgb(4 165 229 / 20%);
+
+    a:link a:visited {
+        color: var(--ctp-latte-blue-hex);
+    }
+
+    .dark_mode_toggle {
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXN1biI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIvPjxwYXRoIGQ9Ik0xMiAydjIiLz48cGF0aCBkPSJNMTIgMjB2MiIvPjxwYXRoIGQ9Im00LjkzIDQuOTMgMS40MSAxLjQxIi8+PHBhdGggZD0ibTE3LjY2IDE3LjY2IDEuNDEgMS40MSIvPjxwYXRoIGQ9Ik0yIDEyaDIiLz48cGF0aCBkPSJNMjAgMTJoMiIvPjxwYXRoIGQ9Im02LjM0IDE3LjY2LTEuNDEgMS40MSIvPjxwYXRoIGQ9Im0xOS4wNyA0LjkzLTEuNDEgMS40MSIvPjwvc3ZnPg==') no-repeat;
+    }
+}
+
+html.dark {
+    color: var(--ctp-mocha-text-hex);
+    background-color: var(--ctp-mocha-base-hex);
+
+    --background-color-start: hsla(267, 84%, 81%, .35);
+    --background-color-end: hsla(343, 81%, 75%, .35);
+    --grid-url: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"%3E%3Cpath d="M 4 4 L 46 4 L 46 46 L 4 46" fill="hsl(240, 23%, 9%)"/%3E%3C/svg%3E');
+
+    --header-normal-color: var(--ctp-mocha-subtext0-hex);
     --header-highlight-color: var(--ctp-mocha-blue-hex);
     --header-highlight-background: rgb(137 180 250 / 10%);
     --header-current-color: var(--ctp-mocha-sky-hex);
     --header-current-background: rgb(137 220 235 / 20%);
 
-    --wavy-move-distance: 0.08rem;
-    --bounce-move-distance: -0.15rem;
-}
-
-body {
-    color: var(--ctp-mocha-text-hex);
-    background-color: var(--ctp-mocha-base-hex);
-
-    a:link {
+    a:link a:visited {
         color: var(--ctp-mocha-blue-hex);
     }
 
-    a:visited {
-        color: inherit;
+    .dark_mode_toggle {
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNDREQ2RjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tb29uLXN0YXIiPjxwYXRoIGQ9Ik0xMiAzYTYgNiAwIDAgMCA5IDkgOSA5IDAgMSAxLTktOSIvPjxwYXRoIGQ9Ik0yMCAzdjQiLz48cGF0aCBkPSJNMjIgNWgtNCIvPjwvc3ZnPg==') no-repeat;
     }
+}
 
+/*just easier to manage instead of digging thru light/dark rules*/
+body {
     .pinhead-text {
         background: var(--pinhead-gradient);
         color: transparent;
@@ -458,10 +491,6 @@ body {
 
     .pinhead-text-animated {
         background: var(--pinhead-gradient-animated) repeat-x;
-        color: transparent;
-        background-clip: text;
-        animation: gradient_scroll 2s linear infinite;
-        background-size: 400% 100%;
     }
 
     @keyframes gradient_scroll {

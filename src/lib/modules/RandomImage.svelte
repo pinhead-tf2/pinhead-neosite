@@ -8,6 +8,7 @@
             all_images.push(key);
         }
     }
+    // const image = all_images[7]
     const image = all_images[Math.floor(Math.random() * all_images.length)]
 </script>
 
