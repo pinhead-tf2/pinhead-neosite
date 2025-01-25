@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="saving to update to tailwind 4.0">
-      <change afterPath="$PROJECT_DIR$/src/lib/modules/DarkModeToggle.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/modules/Footer.svelte" afterDir="false" />
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/BouncingText.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/BouncingText.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/Grid.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Grid.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/modules/WavyText.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/WavyText.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/shared.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="v4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +46,13 @@
     &quot;assignee&quot;: &quot;pinheadtf2&quot;
   }
 }</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/pinheadtf2/pinhead-website.git&quot;,
@@ -74,22 +67,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;svelte&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "version-4",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
@@ -127,7 +120,7 @@
       <workItem from="1737567472755" duration="1584000" />
       <workItem from="1737658114985" duration="2350000" />
       <workItem from="1737660839314" duration="6447000" />
-      <workItem from="1737740676000" duration="22027000" />
+      <workItem from="1737740676000" duration="22744000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -193,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737661304745</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code">
+      <option name="closed" value="true" />
+      <created>1737790911711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737790911711</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +209,8 @@
     <MESSAGE value="i corrected wavy text and now i added bouncing text (it was a fight)&#10;&#10;i also added random images" />
     <MESSAGE value="small readability adjustments" />
     <MESSAGE value="saving to update to tailwind 4.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving to update to tailwind 4.0" />
+    <MESSAGE value="- migrated to tailwind 4.0&#10;- officially designating svelte as v4&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
+    <MESSAGE value="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
   </component>
 </project>
