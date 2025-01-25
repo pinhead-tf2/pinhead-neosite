@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="attempt at creating a docker image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1737567472755" duration="1584000" />
       <workItem from="1737658114985" duration="2350000" />
       <workItem from="1737660839314" duration="6447000" />
-      <workItem from="1737740676000" duration="22744000" />
+      <workItem from="1737740676000" duration="23472000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -194,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737790911711</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="attempt at creating a docker image">
+      <option name="closed" value="true" />
+      <created>1737791508099</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737791508099</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +218,7 @@
     <MESSAGE value="saving to update to tailwind 4.0" />
     <MESSAGE value="- migrated to tailwind 4.0&#10;- officially designating svelte as v4&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
     <MESSAGE value="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
+    <MESSAGE value="attempt at creating a docker image" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt at creating a docker image" />
   </component>
 </project>

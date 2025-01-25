@@ -17,4 +17,7 @@ COPY --from=build /app/build ./build
 RUN npm install --production
 
 EXPOSE 8080
-ENTRYPOINT [ "npm", "run", "start" ]
+ENTRYPOINT [ "node", "build" ]
+
+# https://medium.com/@loic.joachim/dockerize-sveltekit-with-node-adapter-62c5dc6fc15a
+# https://hamy.xyz/blog/2022-11-dockerize-sveltekit-node
