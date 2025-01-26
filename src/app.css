@@ -34,7 +34,7 @@
     }
 
     @theme {
-        --font-sans: "InterVariable", "sans-serif";
+        --font-sans: InterVariable, sans-serif;
         --font-sans--font-feature-settings: 'liga' 1, 'calt' 1;
     }
 
@@ -42,14 +42,4 @@
     * {
         @apply transition-colors duration-2500;
     }
-
-    /*html {*/
-    /*    font-family: InterVariable, sans-serif;*/
-    /*    font-feature-settings: 'liga' 1, 'calt' 1; !* Chrome fix *!*/
-    /*}*/
-    /*@supports (font-variation-settings: normal) {*/
-    /*    :root {*/
-    /*        font-family: InterVariable, sans-serif;*/
-    /*    }*/
-    /*}*/
 }

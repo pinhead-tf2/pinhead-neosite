@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="attempt at creating a docker image">
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans">
+      <change afterPath="$PROJECT_DIR$/src/routes/api/randomimage/+server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/shared.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +36,8 @@
         <option value="Footer" />
         <option value="GradientText.svelte" />
         <option value="DarkModeToggle" />
+        <option value="/api/randomimage" />
+        <option value="randomimage/+server.ts" />
       </list>
     </option>
   </component>
@@ -66,22 +76,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "version-4",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;version-4&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mrmax\\WebstormProjects\\pinhead-website\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
@@ -119,7 +129,9 @@
       <workItem from="1737567472755" duration="1584000" />
       <workItem from="1737658114985" duration="2350000" />
       <workItem from="1737660839314" duration="6447000" />
-      <workItem from="1737740676000" duration="23472000" />
+      <workItem from="1737740676000" duration="24813000" />
+      <workItem from="1737829151422" duration="54000" />
+      <workItem from="1737845482186" duration="11548000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -201,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737791508099</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="corrected entrypoint commands">
+      <option name="closed" value="true" />
+      <created>1737792154963</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737792154963</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +239,8 @@
     <MESSAGE value="- migrated to tailwind 4.0&#10;- officially designating svelte as v4&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
     <MESSAGE value="- officially designating svelte as v4&#10;- migrated to tailwind 4.0&#10;- light/dark mode with initial reliance on system theme&#10;- added a footer&#10;- cleanups to some code" />
     <MESSAGE value="attempt at creating a docker image" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt at creating a docker image" />
+    <MESSAGE value="corrected entrypoint commands" />
+    <MESSAGE value="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans" />
+    <option name="LAST_COMMIT_MESSAGE" value="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans" />
   </component>
 </project>
