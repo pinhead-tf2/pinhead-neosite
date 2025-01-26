@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-    </list>
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="qhar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +120,7 @@
       <workItem from="1737660839314" duration="6447000" />
       <workItem from="1737740676000" duration="24813000" />
       <workItem from="1737829151422" duration="54000" />
-      <workItem from="1737845482186" duration="11974000" />
+      <workItem from="1737845482186" duration="12341000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -220,7 +218,31 @@
       <option name="project" value="LOCAL" />
       <updated>1737859299047</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="quick patch to attempt git not being in github action containers">
+      <option name="closed" value="true" />
+      <created>1737859706076</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737859706076</updated>
+    </task>
+    <task id="LOCAL-00014" summary="quick patch to attempt git not being in github action containers">
+      <option name="closed" value="true" />
+      <created>1737859851127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737859851127</updated>
+    </task>
+    <task id="LOCAL-00015" summary="qhar">
+      <option name="closed" value="true" />
+      <created>1737859908342</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737859908342</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +262,8 @@
     <MESSAGE value="attempt at creating a docker image" />
     <MESSAGE value="corrected entrypoint commands" />
     <MESSAGE value="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans" />
-    <option name="LAST_COMMIT_MESSAGE" value="added versioning, added link icon beside links, currently displaying one image instead of random, corrected site showing as serif instead of sans" />
+    <MESSAGE value="quick patch to attempt git not being in github action containers" />
+    <MESSAGE value="qhar" />
+    <option name="LAST_COMMIT_MESSAGE" value="qhar" />
   </component>
 </project>
