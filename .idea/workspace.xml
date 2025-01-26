@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="wrong spot">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="turns out github actions was fine and nodejs-slim has no git install">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +139,7 @@
       <workItem from="1737660839314" duration="6447000" />
       <workItem from="1737740676000" duration="24813000" />
       <workItem from="1737829151422" duration="54000" />
-      <workItem from="1737845482186" duration="12975000" />
+      <workItem from="1737845482186" duration="13557000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -278,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737860250809</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="turns out github actions was fine and nodejs-slim has no git install">
+      <option name="closed" value="true" />
+      <created>1737860924114</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737860924114</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +309,7 @@
     <MESSAGE value="qhar" />
     <MESSAGE value="seeing if this command works at all" />
     <MESSAGE value="wrong spot" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrong spot" />
+    <MESSAGE value="turns out github actions was fine and nodejs-slim has no git install" />
+    <option name="LAST_COMMIT_MESSAGE" value="turns out github actions was fine and nodejs-slim has no git install" />
   </component>
 </project>
