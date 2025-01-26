@@ -9,6 +9,8 @@ jobs:
     environment: Production
     runs-on: ubuntu-latest
     steps:
+      - name: Install git
+        run: sudo apt-get install git --yes
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Docker Hub Login
