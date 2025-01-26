@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Install git
         run: sudo apt-get install git --yes
-      - name: Validate git
-        run: git rev-parse HEAD
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Validate git
+        run: git rev-parse HEAD
       - name: Docker Hub Login
         run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: Build and push
