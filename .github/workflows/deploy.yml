@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Install git
         run: sudo apt-get install git --yes
+      - name: Validate git
+        run: git --version
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Docker Hub Login
