@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="turns out github actions was fine and nodejs-slim has no git install">
+    <list default="true" id="27928670-f051-4c5c-815b-09ace468d0b4" name="Changes" comment="add robots.txt, removed random image (will create gallery later), added grid animation toggle">
+      <change afterPath="$PROJECT_DIR$/src/lib/modules/GridToggle.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/DarkModeToggle.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/DarkModeToggle.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/Grid.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Grid.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/modules/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/modules/RandomImage.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/randomimage/+server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shared.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/shared.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +43,7 @@
         <option value="DarkModeToggle" />
         <option value="/api/randomimage" />
         <option value="randomimage/+server.ts" />
+        <option value="GridToggle" />
       </list>
     </option>
   </component>
@@ -73,7 +88,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "version-4",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/modules",
+    "last_opened_file_path": "C:/Users/mrmax/WebstormProjects/pinhead-website/src/lib/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,13 +101,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\icons" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\static" />
+      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\icons" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\images" />
       <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\src\lib\modules" />
-      <recent name="C:\Users\mrmax\WebstormProjects\pinhead-website\static" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,6 +157,9 @@
       <workItem from="1737740676000" duration="24813000" />
       <workItem from="1737829151422" duration="54000" />
       <workItem from="1737845482186" duration="13557000" />
+      <workItem from="1737866608241" duration="855000" />
+      <workItem from="1737934029368" duration="814000" />
+      <workItem from="1738264404477" duration="15607000" />
     </task>
     <task id="LOCAL-00001" summary="Testing out svelte">
       <option name="closed" value="true" />
@@ -285,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737860924114</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="remove redundant git install action step, corrected casing for dockerfile&#10;&#10;real talk, this is extremely weird. it builds on my pc, a ubuntu server, and a debian server, all with docker. if this one doesnt work im just gonna manually build everything ngl">
+      <option name="closed" value="true" />
+      <created>1737866879319</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737866879319</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +338,8 @@
     <MESSAGE value="seeing if this command works at all" />
     <MESSAGE value="wrong spot" />
     <MESSAGE value="turns out github actions was fine and nodejs-slim has no git install" />
-    <option name="LAST_COMMIT_MESSAGE" value="turns out github actions was fine and nodejs-slim has no git install" />
+    <MESSAGE value="remove redundant git install action step, corrected casing for dockerfile&#10;&#10;real talk, this is extremely weird. it builds on my pc, a ubuntu server, and a debian server, all with docker. if this one doesnt work im just gonna manually build everything ngl" />
+    <MESSAGE value="add robots.txt, removed random image (will create gallery later), added grid animation toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add robots.txt, removed random image (will create gallery later), added grid animation toggle" />
   </component>
 </project>

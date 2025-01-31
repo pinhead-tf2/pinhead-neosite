@@ -14,7 +14,7 @@ const config = {
         // See https://svelte.dev/docs/kit/adapters for more information about adapters.
         adapter: adapter(),
         version: {
-            name: `v4.0.1 ${child_process.execSync('git rev-parse HEAD').toString().trim().slice(0, 6)}`
+            name: `v4.0.2,${child_process.execSync('git rev-parse HEAD').toString().trim().slice(0, 6)}`
         }
     }
 };

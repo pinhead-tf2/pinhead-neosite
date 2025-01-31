@@ -2,6 +2,8 @@
     import izumi from "$lib/images/izumi.png";
     import {page} from "$app/state";
     import DarkModeToggle from "$lib/modules/DarkModeToggle.svelte";
+    import GridToggle from "$lib/modules/GridToggle.svelte";
+    import {Github} from "lucide-svelte";
 
     let {
         pages = [
@@ -47,13 +49,15 @@
     <div class="flex-1">
         <nav class="md:flex justify-center items-center gap-4">
             {#each pages as item }
-                <a class="relative items-center text-xl px-2 py-1.5 gap-1 rounded-lg no-underline transition ease-in-out hover:duration-200 {page.url.pathname === item.path ? 'current_page' : 'normal_page'}"
+                <a class="relative items-center text-xl px-2 py-1.5 gap-1 rounded-lg no-underline transition ease-in-out duration-200 {page.url.pathname === item.path ? 'current_page' : 'normal_page'}"
                    href="{item.path}">{item.name}
                 </a>
             {/each}
         </nav>
     </div>
-    <div class="flex-1 text-end">
+    <div class="flex-1 text-end flex-row items-center">
+<!--        <a href="https://github.com/pinheadtf2/pinhead-website/tree/version-4" class="self-center inline-block w-[3.4rem] h-[1.5rem] bg-no-repeat" id="header_discord"></a>-->
+        <GridToggle/>
         <DarkModeToggle/>
     </div>
 </header>

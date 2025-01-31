@@ -1,18 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link href="%sveltekit.assets%/favicon.png" rel="icon"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>pinhead's website (v4)</title>
+    <meta content="pinhead's website" property="og:title"/>
+    <meta content="pinhead's personal site - v4 branch (preview)" property="og:description"/>
+    <meta content="https://v4.pinhead.dev" property="og:url"/>
+    <meta content="https://v4.pinhead.dev/mizu-conie.png" property="og:image"/>
+    <meta content="#2196f3" data-react-helmet="true" name="theme-color"/>
+    <link href="%sveltekit.assets%/favicon.png" rel="icon"/>
     <link href="%sveltekit.assets%/shared.css" media="all" rel="stylesheet" type="text/css">
     <link href="https://rsms.me/" rel="preconnect">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <!--immediate changes that dont depend on specific elements-->
     <script>
-        document.documentElement.classList.toggle("dark", localStorage.currentTheme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),);
+        if (localStorage.currentTheme === "light") {
+            document.documentElement.classList.remove('dark')
+        }
     </script>
     %sveltekit.head%
 </head>
 <body class="m-0" data-sveltekit-preload-data="hover">
 <div id="container" style="display: contents">%sveltekit.body%</div>
+<!--specific element changes (load last)-->
+<script lang="ts">
+    if (localStorage.gridMode === "static") {
+        document.getElementById('background_grid').classList.remove("animated")
+    }
+</script>
 </body>
 </html>

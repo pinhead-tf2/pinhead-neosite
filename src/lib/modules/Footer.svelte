@@ -2,7 +2,7 @@
     import {version} from '$app/environment';
     import {Link} from "lucide-svelte";
 
-    const version_split = version.split(" ")
+    const version_split = version.split(",")
 </script>
 
 <div class="grid grid-cols-[1fr_auto_auto_auto_1fr] grid-rows-[max-content_max-content] min-w-full border-[var(&#45;&#45;ctp-latte-text-hex)] dark:border-[var(&#45;&#45;ctp-mocha-text-hex)] border-t font-mono">
